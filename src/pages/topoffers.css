@@ -1,0 +1,45 @@
+.top-offers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px
+}
+
+.shadow.flex-column h5:nth-child(2) {
+    font-weight: bolder;
+}
+
+.top-offers-grid .phone-img {
+    height: 150px;
+    transition: .7s;
+    cursor: grab;
+}
+
+.top-offers-grid .phone-img:hover {
+    transform: scale(1.04);
+}
+
+.top-offers-grid .badges {
+    height: 30px;
+    width: 30px;
+}
+
+.top-offers {
+    padding-bottom: 3rem;
+}
+
+
+@media screen  and (max-width: 820px){
+    .top-offers-grid {
+        grid-template-columns:  repeat(3,1fr);
+        gap: 40px
+    }
+}
+
+
+
+@media screen  and (max-width: 768px){
+    .top-offers-grid {
+        grid-template-columns:  1fr;
+        gap: 40px
+    }
+}

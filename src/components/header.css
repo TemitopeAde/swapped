@@ -1,0 +1,260 @@
+.auth-flex button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+header {
+    padding: 1rem;
+    background-color: #000;
+}
+
+.center-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.elements-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+}
+
+nav .navlinks {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+nav .auth-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+nav .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: .8s;
+}
+
+nav a:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+ul {
+    margin: 0 !important;
+}
+
+header .form-control {
+    width: 100%
+}
+
+.navbar-two {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-two div ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.navbar-two div ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: .85rem;
+    transition: .7s;
+}
+
+.navbar-two div ul a:hover {
+    color: greenyellow;
+}
+
+.navbar-two .title {
+    color: grey;
+    text-decoration: none;
+}
+
+
+
+
+/* Harmburger */
+
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 30px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: whitesmoke;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.logo {
+    display: none;
+}
+
+
+.hamburger-lines {
+    background-color: none;
+    border: none;
+    outline: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+header {
+    transition: 0.8s;
+}
+
+.header {
+    transition: 0.8s;
+}
+
+.header.toggle {
+    transition: .9s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar-two div ul {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .navbar-two {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem
+    }
+
+    .navbar-two div ul li a {
+        font-size: 1.3rem;
+        text-align: left
+    }
+
+    header nav {
+        grid-template-columns: 1fr;
+    }
+
+    nav .navlinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header {
+        height: 9vh;
+        overflow: hidden;
+        transition: 0.8s;
+    }
+
+    .header.toggle {
+        height: auto;
+        overflow: visible;
+        transition: 0.8s;
+    }
+
+
+}
