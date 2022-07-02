@@ -1,0 +1,11 @@
+.hero-slide-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    text-align: center;
+}
+
+.hero-section {
+    z-index: -1;
+}

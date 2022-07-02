@@ -1,0 +1,79 @@
+.sidebar-container {
+    width: 90vh;
+    
+}
+
+.sidebar-container .sidebar {
+    width: 30%;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    top: 15vh;
+    left: 0;
+    background-color: rgb(253, 251, 251);
+    z-index: 10000;
+}
+
+.sidebar-container .sidebar-content {
+    position: absolute;
+    left: 33%;
+    top: 19vh;
+}
+
+.sidebar a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.sidebar-container .sidebar .first-list {
+    height: 50vh;
+    overflow-y: scroll;
+    padding: 1rem 0;
+    overflow-x: hidden;
+}
+
+
+.first-list a {
+    padding: 10px 0;
+    display: block;
+    font-size: 1.3rem;
+}
+
+.sidebar-container .others {
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.sidebar .second-list a {
+    padding: 10px 0;
+    display: block;
+}
+
+.sidebar ul {
+    padding-left: 0;
+}
+
+.sidebar-container .sidebar ul li {
+    border-bottom: 2px solid whitesmoke;
+}
+
+.fort-list a, 
+.third-list a,
+.second-list a {
+    display: block;
+    padding: 20px 0;
+    transition: .8s;
+}
+
+
+
+.fort-list a:hover, 
+.third-list a:hover,
+.second-list a:hover,
+.first-list a:hover {
+    transform: translateX(3px);
+}
+
+.first-list a {
+    transition: .8s;
+}
