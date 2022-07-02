@@ -267,7 +267,9 @@ header {
 }
 
 
-
+#mobile-sidebar {
+    display: none;
+}
 
 
 
@@ -323,4 +325,26 @@ header {
         color: white;
         opacity: 1;
     }
+
+    #web-sidebar {
+        display: none;
+    }
+
+    .header {
+        height: 16vh;
+    }
+
+    #mobile-sidebar {
+        display: block;
+    }
+
+    .search-form-container .form-control {
+        font-size: .68rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1600px) {
+    
 }

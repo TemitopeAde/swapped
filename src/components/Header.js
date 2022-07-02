@@ -1,12 +1,9 @@
 import React, { useRef, useState } from "react";
 import { Box, Stack } from "@mui/material";
-import { Container } from "@mui/material";
 import { GiHamburgerMenu } from "react-icons/gi";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import { Link } from "react-router-dom";
-import { BsCart2 } from "react-icons/bs";
-import { AiOutlineUser } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { BiSearchAlt2 } from "react-icons/bi";
 import user from "../images/user.png";
@@ -15,6 +12,8 @@ import hamb from "../images/menu.png";
 import close from "../images/close.png";
 import "./header.css";
 import Sidebar from "./Sidebar";
+import MobileSidebar from "./MobileSidebar";
+import closebtn from "../images/close-white.png";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -42,6 +41,7 @@ const Header = () => {
   const [header, setHeader] = useState(true);
   const [closeTech, setCloseTech] = useState(true);
   const [sidebarToggle, setSidebarToggle] = useState(false);
+  const [mobileSidebar, setMobileSidebar] = useState(false);
   const headerRef = useRef();
   const handleClick = (e) => {
     e.preventDefault();
@@ -157,15 +157,29 @@ const Header = () => {
               <nav className="nav-mobile">
                 <Stack spacing={2} sx={{ width: "100%" }}>
                   <Box className="flex-mobile">
-                    <button
-                      style={{
-                        background: "none",
-                        border: "none",
-                        outline: "none",
-                      }}
-                    >
-                      <img src={hamb} alt="" className="white-hamb" />
-                    </button>
+                    {mobileSidebar ? (
+                      <button
+                        style={{
+                          background: "none",
+                          border: "none",
+                          outline: "none",
+                        }}
+                        onClick={() => setMobileSidebar(!mobileSidebar)}
+                      >
+                        <img src={closebtn} alt="" className="white-hamb" />
+                      </button>
+                    ) : (
+                      <button
+                        style={{
+                          background: "none",
+                          border: "none",
+                          outline: "none",
+                        }}
+                        onClick={() => setMobileSidebar(!mobileSidebar)}
+                      >
+                        <img src={hamb} alt="" className="white-hamb" />
+                      </button>
+                    )}
 
                     <Link className="mobile-logo" to="/">
                       Reswapped
@@ -192,7 +206,7 @@ const Header = () => {
                       </button>
                     </Box>
                   </Box>
-                  <Box>
+                  <Box className="search-form-container">
                     <form>
                       <Box position="relative">
                         <input
@@ -278,10 +292,17 @@ const Header = () => {
 
           <Box
             className={
-              sidebarToggle ? "header-sidebar toggle" : "header-sidebar"
+              sidebarToggle
+                ? "header-sidebar toggle shadow"
+                : "header-sidebar shadow"
             }
+            id="web-sidebar"
           >
             <Sidebar />
+          </Box>
+
+          <Box id="mobile-sidebar">
+            <MobileSidebar sidebar={mobileSidebar} />
           </Box>
 
           <div className="hamburger">

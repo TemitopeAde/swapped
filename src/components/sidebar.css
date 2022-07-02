@@ -1,6 +1,6 @@
 .sidebar-container {
     width: 90vh;
-    
+
 }
 
 .sidebar-container .sidebar {
@@ -57,7 +57,7 @@
     border-bottom: 2px solid whitesmoke;
 }
 
-.fort-list a, 
+.fort-list a,
 .third-list a,
 .second-list a {
     display: block;
@@ -67,7 +67,7 @@
 
 
 
-.fort-list a:hover, 
+.fort-list a:hover,
 .third-list a:hover,
 .second-list a:hover,
 .first-list a:hover {
@@ -76,4 +76,85 @@
 
 .first-list a {
     transition: .8s;
+}
+
+
+.mobile-sidebar-container {
+    position: fixed;
+    Background-color: rgb(253, 251, 251);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20000;
+    top: 16vh;
+}
+
+
+
+.mobile-first-list a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.mobile-sidebar-container .mobile-first-list {
+    height: 50vh;
+    overflow-y: scroll;
+    padding: 1rem 0;
+    overflow-x: hidden;
+}
+
+
+.mobile-first-list a {
+    padding: 10px 40px;
+    display: block;
+    font-size: 1.3rem;
+}
+
+.mobile-others {
+    font-size: 1.3rem;
+    padding-top: 1.7rem;
+}
+
+.mobile-second-list a {
+    padding: 10px 0;
+    display: block;
+}
+
+
+
+.mobile-sidebar ul li {
+    border-bottom: 2px solid whitesmoke;
+}
+
+.mobile-fort-list a,
+.mobile-third-list a,
+.mobile-second-list a {
+    display: block;
+    padding: 10px 0;
+    transition: .8s;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.mobile-.fort-list a:hover,
+.mobile-.third-list a:hover,
+.mobile-.second-list a:hover,
+.mobile-.first-list a:hover {
+    transform: translateX(3px);
+}
+
+.mobile-first-list a {
+    transition: .8s;
+}
+
+.mobile-sidebar-container {
+    transform: translateX(-100%);
+    transition: .8s;
+}
+
+.mobile-sidebar-container.toggle {
+    transition: .8s;
+    transform: translateX(0);
 }
