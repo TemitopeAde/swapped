@@ -10,6 +10,9 @@ import user from "../images/user.png";
 import cart from "../images/cart.png";
 import hamb from "../images/menu.png";
 import close from "../images/close.png";
+import closewhite from "../images/close-white.png";
+import menuI from "../images/menu.png";
+
 import "./header.css";
 import Sidebar from "./Sidebar";
 import MobileSidebar from "./MobileSidebar";
@@ -40,7 +43,7 @@ i18n
 const Header = () => {
   const [header, setHeader] = useState(true);
   const [closeTech, setCloseTech] = useState(true);
-  const [sidebarToggle, setSidebarToggle] = useState(false);
+  const [sidebarToggle, setSidebarToggle] = useState(true);
   const [mobileSidebar, setMobileSidebar] = useState(false);
   const headerRef = useRef();
   const handleClick = (e) => {
@@ -166,7 +169,11 @@ const Header = () => {
                         }}
                         onClick={() => setMobileSidebar(!mobileSidebar)}
                       >
-                        <img src={closebtn} alt="" className="white-hamb" />
+                        <img
+                          src={closebtn}
+                          alt=""
+                          className="mobile-nav-icon"
+                        />
                       </button>
                     ) : (
                       <button
@@ -177,7 +184,7 @@ const Header = () => {
                         }}
                         onClick={() => setMobileSidebar(!mobileSidebar)}
                       >
-                        <img src={hamb} alt="" className="white-hamb" />
+                        <img src={hamb} alt="" className="mobile-nav-icon" />
                       </button>
                     )}
 
@@ -237,14 +244,41 @@ const Header = () => {
                 alignItems: "center",
               }}
             >
-              <button
-                style={{ background: "none", border: "none", outline: "none" }}
-                className="title"
-                onClick={() => setSidebarToggle(!sidebarToggle)}
-              >
-                <GiHamburgerMenu />
-                <span style={{ marginLeft: "3px" }}>All items</span>
-              </button>
+              {setSidebarToggle ? (
+                <button
+                  style={{
+                    background: "none",
+                    border: "none",
+                    outline: "none",
+                  }}
+                  className="title"
+                  onClick={() => setSidebarToggle(!sidebarToggle)}
+                >
+                  <img
+                    style={{ width: "20px", height: "20px" }}
+                    src={menuI}
+                    alt=""
+                  />
+                  <span style={{ marginLeft: "3px" }}>All items</span>
+                </button>
+              ) : (
+                <button
+                  style={{
+                    background: "none",
+                    border: "none",
+                    outline: "none",
+                  }}
+                  className="title"
+                  onClick={() => setSidebarToggle(!sidebarToggle)}
+                >
+                  <img
+                    style={{ width: "20px", height: "20px" }}
+                    src={closewhite}
+                    alt=""
+                  />
+                  <span style={{ marginLeft: "3px" }}>All items</span>
+                </button>
+              )}
             </Box>
             <Box>
               <Box>
@@ -329,20 +363,28 @@ const Header = () => {
             alignItems="center"
             justifyContent="center"
             textAlign="center"
-            height="8vh"
-            sx={{ background: "#81fbf3", position: "relative" }}
+            height="6vh"
+            sx={{ zIndex: '90000', background: "#81fbf3", position: "absolute" }}
+            className="advert-money"
+
           >
-            Got old tech?
-            <Link style={{ color: "#000", marginLeft: "5px" }} to="/">
-              Take our money
-            </Link>
-            <Box sx={{ position: "absolute", top: "15px", right: "10px" }}>
-              <button
-                onClick={() => setCloseTech(false)}
-                style={{ background: "none", outline: "none", border: "none" }}
-              >
-                <img src={close} alt="" className="mobile-close" />
-              </button>
+            <Box sx={{position: 'relative'}}>
+              Got old tech?
+              <Link style={{ color: "#000", marginLeft: "5px" }} to="/">
+                Take our money
+              </Link>
+              <Box sx={{ position: "absolute", top: "0px", right: "-50px" }}>
+                <button
+                  onClick={() => setCloseTech(false)}
+                  style={{
+                    background: "none",
+                    outline: "none",
+                    border: "none",
+                  }}
+                >
+                  <img src={close} alt="" className="mobile-close" />
+                </button>
+              </Box>
             </Box>
           </Box>
         )}

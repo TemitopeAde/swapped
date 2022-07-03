@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import TopOffers from "./pages/TopOffers";
 import "./App.css";
 import Home from "./pages/Home";
-
+import CellPhones from "./pages/CellPhones";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -13,6 +13,7 @@ function App() {
         
         <Route path="/" element={<Home />} />
         <Route path="/top-offers" element={<TopOffers />} />
+        <Route path="/cellphones" element={<CellPhones />} />
       </Routes>
     </div>
   );

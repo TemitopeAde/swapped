@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import iphone8 from "../images/iphone8.png";
 import Countdown from "react-countdown";
 import "./topoffers.css";
+import menu from "../images/collections.png";
+import half from "../images/half.png";
 
 const TopOffers = () => {
   const Completionist = () => <span>You are good to go!</span>;
@@ -27,8 +29,45 @@ const TopOffers = () => {
     <Box className="top-offers px-2">
       <Header />
       <Box>
-        <Box>
-          <h1 className="mt-5 mb-5">Top OFERTAS</h1>
+        <Box sx={{ paddingTop: "12rem" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <h1 className="mb-5">Top OFERTAS</h1>
+
+            {/* <Box
+              style={{
+                display: "flex",
+                alignIalignItems: "center",
+                justifyContent: "space-between",
+                gap: '10px',
+                padding: '20px'
+              }}
+            >
+              <Box>
+                <button style={{ border: "none", background: "#fff" }}>
+                  <img
+                    src={menu}
+                    style={{ width: "20px", height: "20px" }}
+                    alt=""
+                  />
+                </button>
+              </Box>
+              <Box>
+                <button style={{ border: "none", background: "#fff" }}>
+                  <img
+                    src={half}
+                    style={{ width: "20px", height: "20px" }}
+                    alt=""
+                  />
+                </button>
+              </Box>
+            </Box> */}
+          </Box>
 
           <Box className="top-offers-grid">
             <Box

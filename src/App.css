@@ -63,6 +63,9 @@ a {
     text-decoration: none;
 }
 
+.btn-success {
+    background-color: #03c51d !important;
+}
 
 .shadow {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

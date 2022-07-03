@@ -16,8 +16,14 @@
 
 .sidebar-container .sidebar-content {
     position: absolute;
-    left: 33%;
+    left: 30%;
     top: 19vh;
+    z-index: 300000;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 2rem;
+    width: 60%;
+    height: 80vh;
 }
 
 .sidebar a {
@@ -157,4 +163,37 @@
 .mobile-sidebar-container.toggle {
     transition: .8s;
     transform: translateX(0);
+}
+
+.sidebar-content {}
+
+
+@media screen and (min-width: 1600px) {
+    .sidebar-container .sidebar {
+        top: 12vh;
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+
+    .sidebar-container .sidebar {
+        top: 10vh;
+    }
+}
+
+
+@media screen and (min-width: 2256px) {
+
+    .sidebar-container .sidebar {
+        top: 8vh;
+    }
+}
+
+@media screen and (min-width: 2736px) {
+
+
+    .sidebar-container .sidebar {
+        top: 6vh;
+    }
 }

@@ -1,0 +1,51 @@
+.cellphone-wrap .filter-bar {
+    position: fixed;
+    bottom: 0;
+    overflow-y: scroll;
+    left: 0;
+    width: 25%;
+    background: whitesmoke;
+    top: 15vh;
+}
+
+.cellphone-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.cellphone-container .filtered-content {
+    position: absolute;
+    left: 27%;
+    top: 135px
+}
+
+.filtered-content .badges {
+    width: 30px;
+    height: 30px;
+}
+
+.flex-end {
+    display: flex;
+}
+
+.flex-between h6 {
+    text-align: center;
+    color: #03c51d;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+

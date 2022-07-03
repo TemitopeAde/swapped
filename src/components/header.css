@@ -5,9 +5,14 @@
 }
 
 header {
-    /* padding: 1rem; */
+    padding: 1rem;
     background-color: #000;
     height: 15vh;
+    position: fixed;
+    z-index: 4000000;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 
 .center-elements {
@@ -45,6 +50,7 @@ nav .auth-flex {
     align-items: center;
     gap: 20px
 }
+
 .auth-flex img {
     width: 30px;
 }
@@ -133,7 +139,12 @@ header .form-control {
     transform: scale(1.05);
 }
 
-
+.advert-money {
+    top: 15vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
 
 
 
@@ -341,10 +352,58 @@ header {
     .search-form-container .form-control {
         font-size: .68rem;
     }
+
+    .mobile-nav-icon {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 
 
 @media screen and (min-width: 1600px) {
-    
+    .header {
+        height: 12vh;
+    }
+
+    .advert-money {
+        top: 12vh;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .header {
+        height: 10vh;
+    }
+
+    .advert-money {
+        top: 10vh;
+    }
+
+}
+
+
+@media screen and (min-width: 2256px) {
+    .header {
+        height: 8vh;
+    }
+
+    .advert-money {
+        top: 8vh;
+
+    }
+
+}
+
+@media screen and (min-width: 2736px) {
+    .header {
+        height: 6vh;
+    }
+
+    .advert-money {
+        top: 6vh;
+
+    }
+
 }
