@@ -5,8 +5,7 @@ import Header from "../components/Header";
 import iphone8 from "../images/iphone8.png";
 import Countdown from "react-countdown";
 import "./topoffers.css";
-import menu from "../images/collections.png";
-import half from "../images/half.png";
+
 
 const TopOffers = () => {
   const Completionist = () => <span>You are good to go!</span>;

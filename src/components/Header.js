@@ -364,17 +364,17 @@ const Header = () => {
             justifyContent="center"
             textAlign="center"
             height="6vh"
-            sx={{ zIndex: '90000', background: "#81fbf3", position: "absolute" }}
+            // sx={{ zIndex: '90000', background: "#81fbf3", position: "absolute" }}
             className="advert-money"
 
           >
             <Box sx={{position: 'relative'}}>
-              Got old tech?
-              <Link style={{ color: "#000", marginLeft: "5px" }} to="/">
+              {/* Got old tech? */}
+              {/* <Link style={{ color: "#000", marginLeft: "5px" }} to="/">
                 Take our money
-              </Link>
+              </Link> */}
               <Box sx={{ position: "absolute", top: "0px", right: "-50px" }}>
-                <button
+                {/* <button
                   onClick={() => setCloseTech(false)}
                   style={{
                     background: "none",
@@ -383,7 +383,7 @@ const Header = () => {
                   }}
                 >
                   <img src={close} alt="" className="mobile-close" />
-                </button>
+                </button> */}
               </Box>
             </Box>
           </Box>
