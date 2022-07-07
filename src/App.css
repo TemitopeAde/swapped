@@ -66,6 +66,12 @@ a {
 
 .btn-success {
     background-color: #03c51d !important;
+    border: none !important;
+    font-family: 'Poppins';
+}
+
+.btn-success:hover {
+    background-color: #2dec46 !important;
 }
 
 .shadow {

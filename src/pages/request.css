@@ -1,0 +1,56 @@
+.repuestos-grid-images {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.repuestos-grid-images img {
+    width: 3.5rem;
+}
+
+.cellphone-grid {
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+}
+
+.filter-bar button {
+    margin-top: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+.repuestos-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.gray-circle {
+    background-color: grey;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+
+
+.request-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.request-items:hover {
+    transform: translateY(2px);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px !important;
+}
+
+
+
+@media screen and (min-width: 1600px) {
+    .repuestos-grid-images img {
+        width: 5rem;
+    }
+}

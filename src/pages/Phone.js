@@ -13,8 +13,8 @@ import truck from "../images/truck.png";
 import verified from "../images/verified.png";
 import thumb from "../images/thumb.png";
 import trucks from "../images/trucks.png";
-import chinese from '../images/chinese.png';
-import clock from '../images/clock.png';
+import chinese from "../images/chinese.png";
+import clock from "../images/clock.png";
 
 const Phone = () => {
   const [image, setImage] = useState(3);
@@ -102,18 +102,17 @@ const Phone = () => {
 
                 <Box className="footer-image-icon">
                   <Box className="footer-icons-image">
-                  <img src={trucks} alt="" />
+                    <img src={trucks} alt="" />
                     <span>Entrega y recogida rapida</span>
-                    
                   </Box>
                   <Box className="footer-icons-image">
-                  <img src={chinese} alt="" />
+                    <img src={chinese} alt="" />
                     <span>Pago segura</span>
-                   
                   </Box>
                   <Box className="footer-icons-image">
+                  <img src={clock} alt="" />
                     <span>Garantia y devoluciones</span>
-                    <img src={clock} alt="" />
+                    
                   </Box>
                 </Box>
               </Box>

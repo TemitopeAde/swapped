@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import CellPhones from "./pages/CellPhones";
 import Phone from "./pages/Phone";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Request from "./pages/Request";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/top-offers" element={<TopOffers />} />
         <Route path="/cellphones" element={<CellPhones />} />
+        <Route path="/repuestos" element={<Request />} />
       </Routes>
     </div>
   );
