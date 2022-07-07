@@ -54,3 +54,9 @@
         width: 5rem;
     }
 }
+
+@media screen and (max-width: 820px) {
+    .filter-bar {
+        display: none;
+    }
+}

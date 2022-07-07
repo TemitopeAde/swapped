@@ -9,7 +9,7 @@ const Request = () => {
   const [showMore, setShowMore] = useState(false);
   const [showModel, setShowModel] = useState(false);
   const [showSize, setShowSize] = useState(false);
-  const [showColor, setShowColor] = useState(false)
+  const [showColor, setShowColor] = useState(false);
   return (
     <Box className="cellphone-container">
       <Header />
@@ -416,7 +416,7 @@ const Request = () => {
                       id="flexCheckDefault"
                     />
                     <label class="form-check-label" for="flexCheckDefault">
-                    Morado
+                      Morado
                     </label>
                   </div>
                 </Box>
