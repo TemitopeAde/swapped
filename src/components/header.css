@@ -342,7 +342,7 @@ header {
     }
 
     .header {
-        height: 14vh;
+        height: 12vh;
     }
 
     #mobile-sidebar {
@@ -358,6 +358,38 @@ header {
         height: 25px;
     }
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+    .css-f779bt-MuiStack-root>:not(style)+:not(style) {
+        margin: 0;
+        margin-top: 7px !important;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+
+    .mobile-logo {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+
+    .header {
+        height: 15vh;
+    }
+}
+
 
 
 
