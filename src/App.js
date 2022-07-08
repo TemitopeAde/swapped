@@ -8,6 +8,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Request from "./pages/Request";
 import PhoneDetails from "./pages/PhoneDetails";
 import Blog from "./pages/Blog";
+import BlogDetails from "./pages/BlogDetails";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Route path="/repuestos" element={<Request />} />
         <Route path="/phone-detail/:id" element={<PhoneDetails />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="blogdetails/:id" element={<BlogDetails />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

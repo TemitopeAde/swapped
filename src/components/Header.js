@@ -284,41 +284,33 @@ const Header = () => {
               <Box>
                 <ul>
                   <li>
-                    <Link to="/top-offers">Good deals</Link>
+                    <Link to="/top-offers">Top OFERTAS</Link>
                   </li>
                   <li>
-                    <Link to="/">Environmental impact</Link>
+                    <Link to="/">Smartphones Nuevos</Link>
                   </li>
                   <li>
-                    <Link to="/">Student Discount</Link>
+                    <Link to="/">Nuestros Recondicionados</Link>
                   </li>
                   <li>
-                    <Link to="/">Cell Phones</Link>
+                    <Link to="/">Repuesto</Link>
                   </li>
                   <li>
-                    <Link to="/">iPhone</Link>
+                    <Link to="/">Fundas y Protectores</Link>
                   </li>
                   <li>
-                    <Link to="/">Samsung Galaxy</Link>
+                    <Link to="/">Accesorios</Link>
                   </li>
                   <li>
-                    <Link to="/">Macbook</Link>
+                    <Link to="/">Informatica y Ocio</Link>
                   </li>
                   <li>
-                    <Link to="/">iPad</Link>
+                    <Link to="/">Material para Tiendas</Link>
                   </li>
                   <li>
-                    <Link to="/">Airpods</Link>
+                    <Link to="/">Blogs</Link>
                   </li>
-                  <li>
-                    <Link to="/">Apple watch</Link>
-                  </li>
-                  <li>
-                    <Link to="/">iMac</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Laptops</Link>
-                  </li>
+                  
                 </ul>
               </Box>
             </Box>
