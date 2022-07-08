@@ -13,7 +13,8 @@
     background-color: whitesmoke;
     z-index: 900000000000;
     bottom: 0;
-    height: 200vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
