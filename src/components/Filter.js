@@ -4,6 +4,11 @@ import close from "../images/close-black.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import "./filtermobile.css";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Filter = ({ setShowMobileFilter, showMobileFilter }) => {
   if (showMobileFilter) {
@@ -21,7 +26,7 @@ const Filter = ({ setShowMobileFilter, showMobileFilter }) => {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                setShowMobileFilter(false)
+                setShowMobileFilter(false);
               }}
               style={{ background: "none", border: "none" }}
             >
@@ -40,65 +45,297 @@ const Filter = ({ setShowMobileFilter, showMobileFilter }) => {
           </Box>
         </Box>
 
-        <Box className="mt-5">
-          <ul>
-            <li>
-              <Link to="/">
-                <div
-                  className="filter-list"
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  <h3>Fabricante</h3>
-                  <IoIosArrowForward />
-                </div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <div
-                  className="filter-list"
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  <h3>Modelo</h3>
-                  <IoIosArrowForward />
-                </div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <div
-                  className="filter-list"
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  <h3>Almacenamiento</h3>
-                  <IoIosArrowForward />
-                </div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <div
-                  className="filter-list"
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  <h3>Condición</h3>
-                  <IoIosArrowForward />
-                </div>
-              </Link>
-            </li>
-            <li>
-              <Link to="/">
-                <div
-                  className="filter-list"
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
-                  <h3>Color</h3>
-                  <IoIosArrowForward />
-                </div>
-              </Link>
-            </li>
-          </ul>
+        <Box className="mt-3">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3>Fabricante</h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Apple
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Apple iPhones
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Google
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Huawei
+                </label>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3>Modelo</h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Galaxy A52 5G
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Galaxy A90 5G
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Galaxy Fold
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Galaxy J6 Plus
+                </label>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3>Almacenamiento</h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  24GB
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  64GB
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  128GB
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  500GB
+                </label>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3>Condición</h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  todos
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  excelente
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  bueno
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  justo
+                </label>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <h3>Color</h3>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Rojo
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  negro
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  blanco
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  naranja
+                </label>
+              </div>
+            </AccordionDetails>
+          </Accordion>
         </Box>
+
+        <div className="filter-mobile-results-button">
+          <button
+            style={{
+              fontSize: "1.3rem",
+              width: "90%",
+              padding: ".8rem 0",
+              fontFamily: "Poppins",
+            }}
+            className="btn btn-dark"
+          >
+            See 120 Products
+          </button>
+        </div>
       </Box>
     );
   }

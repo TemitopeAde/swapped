@@ -9,10 +9,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
     background-color: whitesmoke;
     z-index: 900000000000;
+    bottom: 0;
+    height: 200vh;
 }
 
 
@@ -39,5 +40,12 @@
 @media screen and (max-width: 820px) {
     .filter-container.mobile-filter {
         display: block;
+    }
+
+    .filter-mobile-results-button {
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+        left: 1rem
     }
 }

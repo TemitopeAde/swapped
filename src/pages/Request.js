@@ -4,17 +4,17 @@ import Header from "../components/Header";
 import iph from "../images/mock.jpg";
 import "./request.css";
 import "./cellphones.css";
-import sort from '../images/sort.png';
+import sort from "../images/sort.png";
 import filter from "../images/collections.png";
 import Filter from "../components/Filter";
-
 
 const Request = () => {
   const [showMore, setShowMore] = useState(false);
   const [showModel, setShowModel] = useState(false);
   const [showSize, setShowSize] = useState(false);
   const [showColor, setShowColor] = useState(false);
-  const [showMobileFilter,setShowMobileFilter] = useState(false)
+  const [showMobileFilter, setShowMobileFilter] = useState(false);
+
   return (
     <Box className="cellphone-container">
       <Header />
@@ -1122,11 +1122,11 @@ const Request = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                setShowMobileFilter(true)
+                setShowMobileFilter(true);
               }}
-              style={{  background: "none", border: "none", fontSize: "24px" }}
+              style={{ background: "none", border: "none", fontSize: "24px" }}
             >
-               <span style={{marginRight: '10px'}}>Filter</span>  
+              <span style={{ marginRight: "10px" }}>Filter</span>
               <img
                 style={{ width: "30px", height: "30px" }}
                 src={filter}
@@ -1135,13 +1135,13 @@ const Request = () => {
             </button>
           </Box>
           <Box>
-          <button
+            <button
               onClick={(e) => {
                 e.preventDefault();
               }}
               style={{ background: "none", border: "none", fontSize: "24px" }}
             >
-               <span style={{marginRight: '10px'}}>Sort By</span>  
+              <span style={{ marginRight: "10px" }}>Sort By</span>
               <img
                 style={{ width: "30px", height: "30px" }}
                 src={sort}
@@ -1152,10 +1152,11 @@ const Request = () => {
         </Box>
       </Box>
 
-      
-
       <Box className="">
-        <Filter showMobileFilter={showMobileFilter} setShowMobileFilter={setShowMobileFilter} />
+        <Filter
+          showMobileFilter={showMobileFilter}
+          setShowMobileFilter={setShowMobileFilter}
+        />
       </Box>
     </Box>
   );
