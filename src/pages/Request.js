@@ -4,12 +4,17 @@ import Header from "../components/Header";
 import iph from "../images/mock.jpg";
 import "./request.css";
 import "./cellphones.css";
+import sort from '../images/sort.png';
+import filter from "../images/collections.png";
+import Filter from "../components/Filter";
+
 
 const Request = () => {
   const [showMore, setShowMore] = useState(false);
   const [showModel, setShowModel] = useState(false);
   const [showSize, setShowSize] = useState(false);
   const [showColor, setShowColor] = useState(false);
+  const [showMobileFilter,setShowMobileFilter] = useState(false)
   return (
     <Box className="cellphone-container">
       <Header />
@@ -115,7 +120,7 @@ const Request = () => {
             </Box>
 
             <Box className="mt-2">
-              <h6 className="mb-3">Model</h6>
+              <h6 className="mb-3">Modelo</h6>
 
               <div class="form-check">
                 <input
@@ -213,7 +218,7 @@ const Request = () => {
             </Box>
 
             <Box className="mb-5 mt-5">
-              <h6 className="mb-3">Storage</h6>
+              <h6 className="mb-3">Almacenamiento</h6>
 
               <div class="form-check">
                 <input
@@ -311,7 +316,7 @@ const Request = () => {
             </Box>
 
             <Box className="mb-5 mt-5">
-              <h6 className="mb-3">Condition</h6>
+              <h6 className="mb-3">Condición</h6>
 
               <div class="form-check">
                 <input
@@ -360,7 +365,7 @@ const Request = () => {
             </Box>
 
             <Box className="mb-5 mt-5">
-              <h6 className="mb-3">Colour</h6>
+              <h6 className="mb-3">Color</h6>
 
               <div class="form-check">
                 <input
@@ -1109,6 +1114,48 @@ const Request = () => {
             </Box>
           </Box>
         </Box>
+      </Box>
+
+      <Box className="filter-request-container shadow">
+        <Box className="filter-request-flex">
+          <Box>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setShowMobileFilter(true)
+              }}
+              style={{  background: "none", border: "none", fontSize: "24px" }}
+            >
+               <span style={{marginRight: '10px'}}>Filter</span>  
+              <img
+                style={{ width: "30px", height: "30px" }}
+                src={filter}
+                alt=""
+              />
+            </button>
+          </Box>
+          <Box>
+          <button
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+              style={{ background: "none", border: "none", fontSize: "24px" }}
+            >
+               <span style={{marginRight: '10px'}}>Sort By</span>  
+              <img
+                style={{ width: "30px", height: "30px" }}
+                src={sort}
+                alt=""
+              />
+            </button>
+          </Box>
+        </Box>
+      </Box>
+
+      
+
+      <Box className="">
+        <Filter showMobileFilter={showMobileFilter} setShowMobileFilter={setShowMobileFilter} />
       </Box>
     </Box>
   );

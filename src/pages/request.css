@@ -59,4 +59,44 @@
     .filter-bar {
         display: none;
     }
+
+    .filter-request-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem
+    }
+
+    .filter-request-container{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: 30000;
+        background-color: rgb(236, 234, 234);
+        padding: 1rem 0;
+    }
+
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

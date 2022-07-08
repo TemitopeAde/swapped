@@ -1,0 +1,43 @@
+.filter-container a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.mobile-filter {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: whitesmoke;
+    z-index: 900000000000;
+}
+
+
+.filter-container .filter-list {
+    transition: .8s;
+    padding: 1rem 1rem;
+}
+
+.filter-container .filter-list:hover {
+    background-color: rgb(252, 254, 254);
+}
+
+.filter-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.filter-container.mobile-filter {
+    display: none;
+}
+
+@media screen and (max-width: 820px) {
+    .filter-container.mobile-filter {
+        display: block;
+    }
+}
