@@ -1,13 +1,10 @@
 import { Box } from "@mui/material";
 import React from "react";
 import close from "../images/close-black.png";
-import { IoIosArrowForward } from "react-icons/io";
-import { Link } from "react-router-dom";
 import "./filtermobile.css";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Filter = ({ setShowMobileFilter, showMobileFilter }) => {

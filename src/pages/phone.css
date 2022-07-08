@@ -288,12 +288,24 @@
 
 .footer-image-icon {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-image-icon img {
     width: 20px;
     height: 20px;
+}
+
+.phonedetails-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.2rem;
+    margin-top: 6rem;
+    padding: 0 2rem;
+}
+
+.phonedetails-details-grid .phone-image-details img{
+    width: 450px;
 }
 
 
@@ -328,7 +340,7 @@
     .color label,
     .espacio label {
         font-size: 13px;
-        padding: 1.4rem .6rem;
+        padding: .4rem .6rem;
     }
 
     .form-grid-flex {
@@ -365,6 +377,15 @@
     .details-section-advert {
         padding-bottom: 4rem;
     }
+
+    .phonedetails-details-grid {
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+    }
+
+    .footer-image-icon {
+        display: none;
+    }
 }
 
 
@@ -379,5 +400,9 @@
     }
     .image-nav {
         top: 10vh;
+    }
+
+    .phonedetails-details-grid .phone-image-details img {
+        width: 350px;
     }
 }

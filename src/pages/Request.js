@@ -7,6 +7,7 @@ import "./cellphones.css";
 import sort from "../images/sort.png";
 import filter from "../images/collections.png";
 import Filter from "../components/Filter";
+import Sort from "../components/Sort";
 
 const Request = () => {
   const [showMore, setShowMore] = useState(false);
@@ -14,6 +15,7 @@ const Request = () => {
   const [showSize, setShowSize] = useState(false);
   const [showColor, setShowColor] = useState(false);
   const [showMobileFilter, setShowMobileFilter] = useState(false);
+  const [showSort, setShowSort] = useState(false);
 
   return (
     <Box className="cellphone-container">
@@ -1138,6 +1140,7 @@ const Request = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
+                setShowSort(true);
               }}
               style={{ background: "none", border: "none", fontSize: "24px" }}
             >
@@ -1157,6 +1160,10 @@ const Request = () => {
           showMobileFilter={showMobileFilter}
           setShowMobileFilter={setShowMobileFilter}
         />
+      </Box>
+
+      <Box>
+        <Sort showSort={showSort} setShowSort={setShowSort} />
       </Box>
     </Box>
   );
