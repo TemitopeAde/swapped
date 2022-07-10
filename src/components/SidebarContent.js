@@ -20,16 +20,8 @@ const SidebarContent = ({ show }) => {
   if (show === 1) {
     return (
       <Box>
-        {/* <div style={{ position: "relative" }}>
-          <button
-            className="close-btn-content"
-            style={{ background: "none", border: "none", outline: "none", position: 'absolute', right: '0px' }}
-          >
-            <img style={{ width: "35px", height: "35px" }} src={close} alt="" />
-          </button>
-        </div> */}
-
-        
+        <p>Lorem, ipsum.</p>
+       
       </Box>
     );
   }
