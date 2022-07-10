@@ -109,7 +109,7 @@ const SidebarContent = ({ show }) => {
             <Link to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
-            <Link to="/">Todos ios MAackBook</Link>
+            <Link to="/">Todos ios MackBook</Link>
             <Link to="/">MackBook M1</Link>
             <Link to="/">MackBook Retina</Link>
             <Link to="/">MacBook Pro M1</Link>
