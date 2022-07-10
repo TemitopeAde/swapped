@@ -14,58 +14,58 @@ const Sidebar = () => {
     <Box className="sidebar-container">
       <Box className="sidebar">
         <ul className="first-list">
-          <li>
+          {/* <li>
             <Link onClick={() => setShow(1)} to="/">
               Top OFertas
             </Link>
-          </li>
+          </li> */}
           <li>
-            <Link to="/" onClick={() => setShow(2)}>
+            <Link className={show===1? "color-red": ""} to="/" onClick={() => setShow(1)}>
               Smartphones
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => setShow(3)}>
+            <Link className={show===2? "color-red": ""} to="/" onClick={() => setShow(2)}>
               MacBook
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => setShow(4)}>
+            <Link className={show===3? "color-red": ""} to="/" onClick={() => setShow(3)}>
               iPad & Tablets
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => setShow(4)}>
+            <Link className={show===4? "color-red": ""} to="/" onClick={() => setShow(4)}>
               Informatica y Accesories
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => setShow(5)}>
+            <Link className={show===5? "color-red": ""} to="/" onClick={() => setShow(5)}>
               Coleccion Apple
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => setShow(6)}>
+            <Link className={show===6? "color-red": ""} to="/" onClick={() => setShow(6)}>
               Cascos, Altavoces y Audio
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => setShow(7)}>
+            <Link className={show===7? "color-red": ""} to="/" onClick={() => setShow(7)}>
               Apple watch
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => setShow(8)}>
+            <Link className={show===8? "color-red": ""} to="/" onClick={() => setShow(8)}>
               Accessorios
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => setShow(9)}>
+            <Link className={show===9? "color-red": ""} to="/" onClick={() => setShow(9)}>
               Televisores y Sonido
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => setShow(10)} o>
+            <Link className={show===10? "color-red": ""} to="/" onClick={() => setShow(10)}>
               Tienda oficial
             </Link>
           </li>
