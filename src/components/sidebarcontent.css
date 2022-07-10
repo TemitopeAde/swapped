@@ -3,3 +3,92 @@
     right: 0px;
     top: 0px;
 } */
+
+.sidebar-advert-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    color: white;
+    background-color: black;
+    padding: 2.8rem 1rem;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sidebar-advert-flex img {
+    width: 100%;
+}
+
+.sidebar-advert-flex:nth-child(2) {
+    flex-basis: 30%;
+}
+
+.iphone-grid-sidebar {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 2rem;
+}
+
+.iphone-grid-sidebar .advert-phone-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: .7rem;
+}
+
+.iphone-grid-sidebar .advert-phone-grid a{
+    color: black;
+    text-decoration: none;
+    transition: .8s;
+    opacity: .7;
+}
+
+.iphone-grid-sidebar .advert-phone-grid a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.mackbook {
+    background-color: darkgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
