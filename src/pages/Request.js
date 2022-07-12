@@ -35,7 +35,7 @@ const Request = () => {
                 // onChange={(e) => setNumb(e.target.value)}
               />
 
-              <h6 className="mb-3">Fabricante</h6>
+              <h6 className="mb-3">Manufacturer</h6>
 
               <div class="form-check">
                 <input
@@ -100,29 +100,29 @@ const Request = () => {
 
               {showMore === false ? (
                 <button
-                  style={{ background: "none", border: "none" }}
+                  style={{ background: "none", border: "none", fontWeight: '100'}}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowMore(!showMore);
                   }}
                 >
-                  mostrar más
+                  View more
                 </button>
               ) : (
                 <button
-                  style={{ background: "none", border: "none" }}
+                  style={{ background: "none", border: "none", fontWeight: '100' }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowMore(!showMore);
                   }}
                 >
-                  Muestra menos
+                  View less
                 </button>
               )}
             </Box>
 
             <Box className="mt-2">
-              <h6 className="mb-3">Modelo</h6>
+              <h6 className="mb-3">Model</h6>
 
               <div class="form-check">
                 <input
@@ -198,29 +198,29 @@ const Request = () => {
 
               {showModel === false ? (
                 <button
-                  style={{ background: "none", border: "none" }}
+                  style={{ background: "none", border: "none", fontWeight: '100' }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowModel(!showModel);
                   }}
                 >
-                  mostrar más
+                  View more
                 </button>
               ) : (
                 <button
-                  style={{ background: "none", border: "none" }}
+                  style={{ background: "none", border: "none", fontWeight: '100' }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowModel(!showModel);
                   }}
                 >
-                  Muestra menos
+                  View less
                 </button>
               )}
             </Box>
 
             <Box className="mb-5 mt-5">
-              <h6 className="mb-3">Almacenamiento</h6>
+              <h6 className="mb-3">Storage</h6>
 
               <div class="form-check">
                 <input
@@ -296,75 +296,28 @@ const Request = () => {
 
               {showSize === false ? (
                 <button
-                  style={{ background: "none", border: "none" }}
+                  style={{ background: "none", border: "none", fontWeight: '100' }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowSize(!showSize);
                   }}
                 >
-                  mostrar más
+                  View more
                 </button>
               ) : (
                 <button
-                  style={{ background: "none", border: "none" }}
+                  style={{ background: "none", border: "none", fontWeight: '100' }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowSize(!showSize);
                   }}
                 >
-                  Muestra menos
+                  View less
                 </button>
               )}
             </Box>
 
-            <Box className="mb-5 mt-5">
-              <h6 className="mb-3">Condición</h6>
-
-              <div class="form-check">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  todos
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  excelente
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  bueno
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  justo
-                </label>
-              </div>
-            </Box>
+           
 
             <Box className="mb-5 mt-5">
               <h6 className="mb-3">Color</h6>
@@ -437,7 +390,7 @@ const Request = () => {
                     setShowColor(!showColor);
                   }}
                 >
-                  mostrar más
+                  View more
                 </button>
               ) : (
                 <button
@@ -447,7 +400,7 @@ const Request = () => {
                     setShowColor(!showColor);
                   }}
                 >
-                  Muestra menos
+                  View less
                 </button>
               )}
             </Box>

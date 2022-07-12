@@ -3,6 +3,7 @@
     grid-template-columns: 28% 40% 21%;
     margin-top: 6rem;
     gap: 5%;
+    padding-bottom: 7.5rem;
 }
 
 .color input[type="radio"] {
@@ -302,6 +303,8 @@
     gap: 2.2rem;
     margin-top: 6rem;
     padding: 0 2rem;
+    padding-bottom: 7rem;
+    padding-top: 3.4rem;
 }
 
 .phonedetails-details-grid .phone-image-details img{

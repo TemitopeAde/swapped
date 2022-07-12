@@ -1,6 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Box, Stack } from "@mui/material";
-import { GiHamburgerMenu } from "react-icons/gi";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -9,7 +8,6 @@ import { BiSearchAlt2 } from "react-icons/bi";
 import user from "../images/user.png";
 import cart from "../images/cart.png";
 import hamb from "../images/menu.png";
-import close from "../images/close.png";
 import closewhite from "../images/close-white.png";
 import menuI from "../images/menu.png";
 
@@ -42,7 +40,6 @@ i18n
 
 const Header = () => {
   const [header, setHeader] = useState(true);
-  const [closeTech, setCloseTech] = useState(true);
   const [sidebarToggle, setSidebarToggle] = useState(true);
   const [mobileSidebar, setMobileSidebar] = useState(false);
   const headerRef = useRef();
@@ -55,6 +52,23 @@ const Header = () => {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
     exit: { opacity: 0 },
+  };
+
+  // Sticky Menu Area
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = (e) => {
+    const header = document.querySelector(".header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
   };
 
   return (
@@ -287,30 +301,29 @@ const Header = () => {
                     <Link to="/top-offers">Top OFERTAS</Link>
                   </li>
                   <li>
-                    <Link to="/">Smartphones Nuevos</Link>
+                    <Link to="/smartphones">Smartphones Nuevos</Link>
                   </li>
                   <li>
                     <Link to="/">Nuestros Recondicionados</Link>
                   </li>
                   <li>
-                    <Link to="/">Repuesto</Link>
+                    <Link to="/repuestos">Repuesto</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/">Fundas y Protectores</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/">Accesorios</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/">Informatica y Ocio</Link>
                   </li>
                   <li>
                     <Link to="/">Material para Tiendas</Link>
-                  </li>
+                  </li> */}
                   <li>
-                    <Link to="/">Blogs</Link>
+                    <Link to="/blog">Blogs</Link>
                   </li>
-                  
                 </ul>
               </Box>
             </Box>
@@ -348,38 +361,6 @@ const Header = () => {
             </div>
           </div>
         </header>
-
-        {closeTech && (
-          <Box
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            textAlign="center"
-            height="6vh"
-            // sx={{ zIndex: '90000', background: "#81fbf3", position: "absolute" }}
-            className="advert-money"
-
-          >
-            <Box sx={{position: 'relative'}}>
-              {/* Got old tech? */}
-              {/* <Link style={{ color: "#000", marginLeft: "5px" }} to="/">
-                Take our money
-              </Link> */}
-              <Box sx={{ position: "absolute", top: "0px", right: "-50px" }}>
-                {/* <button
-                  onClick={() => setCloseTech(false)}
-                  style={{
-                    background: "none",
-                    outline: "none",
-                    border: "none",
-                  }}
-                >
-                  <img src={close} alt="" className="mobile-close" />
-                </button> */}
-              </Box>
-            </Box>
-          </Box>
-        )}
       </motion.div>
     </div>
   );

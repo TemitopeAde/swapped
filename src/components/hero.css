@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin-top: 7rem;
-    padding: 3rem 3rem;
+    margin-top: 1rem;
+    padding: 3rem;
     border-radius: 10px;
     background-color: darkgrey;
 }
@@ -21,3 +21,40 @@
 .splide__arrow {    
     top: 60% !important;
 }
+
+.splide {
+    padding: 0 !important;
+}
+
+@media screen  and (max-width: 820px){
+    .img-cont {
+        display: none;
+    }
+
+    .hero-slide-flex {
+        margin-top: 1rem;
+        padding: 3rem .6rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

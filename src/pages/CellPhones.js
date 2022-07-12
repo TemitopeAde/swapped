@@ -5,6 +5,7 @@ import iphone8 from "../images/iphone8.png";
 import "./cellphones.css";
 import menu from "../images/collections.png";
 import half from "../images/half.png";
+import {Link} from 'react-router-dom'
 
 const CellPhones = () => {
   return (
@@ -363,12 +364,12 @@ const CellPhones = () => {
                   </Box>
 
                   <Box>
-                    <button
+                    <Link to="/smart-phones/2"
                       style={{ fontSize: ".7rem", borderRadius: "30px" }}
                       className="btn btn-success"
                     >
                       MORE INFO
-                    </button>
+                    </Link>
                   </Box>
                 </Box>
 
@@ -422,12 +423,12 @@ const CellPhones = () => {
                   style={{ justifyContent: "flex-end" }}
                 >
                   <Box>
-                    <button
+                    <Link to="/smart-phones/2"
                       style={{ fontSize: ".7rem", borderRadius: "30px" }}
                       className="btn btn-success"
                     >
                       MORE INFO
-                    </button>
+                    </Link>
                   </Box>
                 </Box>
 
@@ -484,12 +485,12 @@ const CellPhones = () => {
                   </Box>
 
                   <Box>
-                    <button
+                    <Link to="/smart-phones/2"
                       style={{ fontSize: ".7rem", borderRadius: "30px" }}
                       className="btn btn-success"
                     >
                       MORE INFO
-                    </button>
+                    </Link>
                   </Box>
                 </Box>
 
@@ -543,12 +544,12 @@ const CellPhones = () => {
                   style={{ justifyContent: "flex-end" }}
                 >
                   <Box>
-                    <button
+                    <Link to="/smart-phones/2"
                       style={{ fontSize: ".7rem", borderRadius: "30px" }}
                       className="btn btn-success"
                     >
                       MORE INFO
-                    </button>
+                    </Link>
                   </Box>
                 </Box>
 
@@ -605,12 +606,12 @@ const CellPhones = () => {
                   </Box>
 
                   <Box>
-                    <button
+                    <Link to="/smart-phones/2"
                       style={{ fontSize: ".7rem", borderRadius: "30px" }}
                       className="btn btn-success"
                     >
                       MORE INFO
-                    </button>
+                    </Link>
                   </Box>
                 </Box>
 
@@ -664,12 +665,12 @@ const CellPhones = () => {
                   style={{ justifyContent: "flex-end" }}
                 >
                   <Box>
-                    <button
+                    <Link to="/smart-phones/2"
                       style={{ fontSize: ".7rem", borderRadius: "30px" }}
                       className="btn btn-success"
                     >
                       MORE INFO
-                    </button>
+                    </Link>
                   </Box>
                 </Box>
 
@@ -726,12 +727,12 @@ const CellPhones = () => {
                   </Box>
 
                   <Box>
-                    <button
+                    <Link to="/smart-phones/2"
                       style={{ fontSize: ".7rem", borderRadius: "30px" }}
                       className="btn btn-success"
                     >
                       MORE INFO
-                    </button>
+                    </Link>
                   </Box>
                 </Box>
 
@@ -785,12 +786,12 @@ const CellPhones = () => {
                   style={{ justifyContent: "flex-end" }}
                 >
                   <Box>
-                    <button
+                    <Link to="/smart-phones/2"
                       style={{ fontSize: ".7rem", borderRadius: "30px" }}
                       className="btn btn-success"
                     >
                       MORE INFO
-                    </button>
+                    </Link>
                   </Box>
                 </Box>
 
@@ -847,12 +848,12 @@ const CellPhones = () => {
                   </Box>
 
                   <Box>
-                    <button
+                    <Link to="/smart-phones/2"
                       style={{ fontSize: ".7rem", borderRadius: "30px" }}
                       className="btn btn-success"
                     >
                       MORE INFO
-                    </button>
+                    </Link>
                   </Box>
                 </Box>
 
@@ -906,12 +907,12 @@ const CellPhones = () => {
                   style={{ justifyContent: "flex-end" }}
                 >
                   <Box>
-                    <button
+                    <Link to="/smart-phones/2"
                       style={{ fontSize: ".7rem", borderRadius: "30px" }}
                       className="btn btn-success"
                     >
                       MORE INFO
-                    </button>
+                    </Link>
                   </Box>
                 </Box>
 

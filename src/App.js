@@ -11,18 +11,20 @@ import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/phone-details/:id" element={<Phone />} />
+        <Route path="/smartphones/:id" element={<Phone />} />
         <Route path="/" element={<Home />} />
         <Route path="/top-offers" element={<TopOffers />} />
-        <Route path="/cellphones" element={<CellPhones />} />
+        <Route path="/smartphones" element={<CellPhones />} />
         <Route path="/repuestos" element={<Request />} />
-        <Route path="/phone-detail/:id" element={<PhoneDetails />} />
+        <Route path="/smart-phones/:id" element={<PhoneDetails />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="blogdetails/:id" element={<BlogDetails />} />
+        
       </Routes>
       <Footer />
     </div>

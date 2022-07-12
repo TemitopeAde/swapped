@@ -1,5 +1,5 @@
 import { Box, Stack } from "@mui/material";
-import { Container } from "@mui/system";
+import {Link} from 'react-router-dom';
 import React from "react";
 import Header from "../components/Header";
 import iphone8 from "../images/iphone8.png";
@@ -28,7 +28,7 @@ const TopOffers = () => {
     <Box className="top-offers px-2">
       <Header />
       <Box>
-        <Box sx={{ paddingTop: "12rem" }}>
+        <Box sx={{ paddingTop: "8rem" }}>
           <Box
             sx={{
               display: "flex",
@@ -36,7 +36,7 @@ const TopOffers = () => {
               alignItems: "center",
             }}
           >
-            <h1 className="mb-5">Top OFERTAS</h1>
+            <h1 className="mb-3">Top OFERTAS</h1>
 
             {/* <Box
               style={{
@@ -119,12 +119,12 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link to="/smartphones/2"
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
@@ -182,12 +182,12 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link to="/smartphones/2"
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
@@ -245,12 +245,14 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link 
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
+                    to={`/smartphones/2`}
+                    
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
@@ -308,12 +310,12 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link to="/smartphones/2"
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
@@ -371,12 +373,12 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link to="/smartphones/2"
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
@@ -434,12 +436,12 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link to="/smartphones/2"
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
@@ -497,12 +499,12 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link to="/smartphones/2"
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
@@ -560,12 +562,12 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link to="/smartphones/2"
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
@@ -623,12 +625,12 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link to="/smartphones/2"
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
@@ -686,12 +688,12 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link to="/smartphones/2"
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
@@ -749,12 +751,12 @@ const TopOffers = () => {
                   <Countdown date={Date.now() + 5000000} renderer={renderer} />
                 </Stack>
                 <Box>
-                  <button
+                  <Link to="/smartphones/2"
                     style={{ fontSize: ".7rem", borderRadius: "30px" }}
                     className="btn btn-success"
                   >
                     MORE INFO
-                  </button>
+                  </Link>
                 </Box>
               </Box>
 
