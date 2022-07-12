@@ -17,15 +17,21 @@ const Footer = () => {
       setIsBottom(false);
     }
   };
-  React.useEffect(() => {
-    window.addEventListener("scroll", handleScroll, {
-      passive: true,
-    });
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+  React.useEffect(() => {
+    if (window.innerWidth >= 820) {
+      window.addEventListener("scroll", handleScroll, {
+        passive: true,
+      });
+
+      console.log("big")
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
+
   return (
     <div className={isBottom ? "footer-fixed" : "hideFooter"}>
       <Box className="footer-flex-page">

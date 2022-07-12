@@ -7,7 +7,7 @@ import './section.css';
 
 const Section = () => {
   return (
-    <Box style={{ padding: "6rem 1rem", paddingBottom: '12rem' }}>
+    <Box style={{ padding: "6rem 1rem", paddingBottom: '2.9rem' }}>
       <Box>
         <Box>
           <h3 style={{ marginBottom: "3rem" }}>Best selling</h3>
