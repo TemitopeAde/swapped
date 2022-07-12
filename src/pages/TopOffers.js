@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import iphone8 from "../images/iphone8.png";
 import Countdown from "react-countdown";
 import "./topoffers.css";
+import Footer from "../components/Footer";
 
 
 const TopOffers = () => {
@@ -28,7 +29,7 @@ const TopOffers = () => {
     <Box className="top-offers px-2">
       <Header />
       <Box>
-        <Box sx={{ paddingTop: "8rem" }}>
+        <Box sx={{ paddingTop: "4rem" }}>
           <Box
             sx={{
               display: "flex",
@@ -767,6 +768,8 @@ const TopOffers = () => {
           </Box>
         </Box>
       </Box>
+
+      <Footer />
     </Box>
   );
 };

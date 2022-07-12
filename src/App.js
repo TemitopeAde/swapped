@@ -9,8 +9,6 @@ import Request from "./pages/Request";
 import PhoneDetails from "./pages/PhoneDetails";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
-import Footer from "./components/Footer";
-
 
 function App() {
   return (
@@ -24,9 +22,7 @@ function App() {
         <Route path="/smart-phones/:id" element={<PhoneDetails />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="blogdetails/:id" element={<BlogDetails />} />
-        
       </Routes>
-      <Footer />
     </div>
   );
 }

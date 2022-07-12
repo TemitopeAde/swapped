@@ -19,7 +19,7 @@ const BlogDetails = () => {
                 Example of Blog Post
               </h3>
 
-              <Link className="back-btn" to="/">
+              <Link className="back-btn" to="/blog">
                 <Box sx={{ position: "relative" }}>
                   <Box sx={{ position: "absolute" }}>
                     <h4

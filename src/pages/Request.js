@@ -8,6 +8,7 @@ import sort from "../images/sort.png";
 import filter from "../images/collections.png";
 import Filter from "../components/Filter";
 import Sort from "../components/Sort";
+import Footer from "../components/Footer";
 
 const Request = () => {
   const [showMore, setShowMore] = useState(false);
@@ -1118,6 +1119,8 @@ const Request = () => {
       <Box>
         <Sort showSort={showSort} setShowSort={setShowSort} />
       </Box>
+
+      
     </Box>
   );
 };

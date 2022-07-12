@@ -10,6 +10,7 @@ import cart from "../images/cart.png";
 import hamb from "../images/menu.png";
 import closewhite from "../images/close-white.png";
 import menuI from "../images/menu.png";
+import Dropdown from "react-bootstrap/Dropdown";
 
 import "./header.css";
 import Sidebar from "./Sidebar";
@@ -66,7 +67,7 @@ const Header = () => {
   const isSticky = (e) => {
     const header = document.querySelector(".header");
     const scrollTop = window.scrollY;
-    scrollTop >= 50
+    scrollTop >= 650
       ? header.classList.add("is-sticky")
       : header.classList.remove("is-sticky");
   };
@@ -103,30 +104,23 @@ const Header = () => {
                       <Link to="/">Trade-in</Link>
                     </li>
                     <div className="dropdown">
-                      <button
-                        className="btn btn-secondary dropdown-toggle"
-                        type="button"
-                        id="dropdownMenuButton"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        button
-                      </button>
-                      <div
-                        className="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton"
-                      >
-                        <a className="dropdown-item" href="/">
-                          Action
-                        </a>
-                        <a className="dropdown-item" href="/">
-                          Another action
-                        </a>
-                        <a className="dropdown-item" href="/">
-                          Something else here
-                        </a>
-                      </div>
+                      <Dropdown>
+                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                          Test
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                          <Dropdown.Item href="#/action-1">
+                            Action
+                          </Dropdown.Item>
+                          <Dropdown.Item href="#/action-2">
+                            Another action
+                          </Dropdown.Item>
+                          <Dropdown.Item href="#/action-3">
+                            Something else
+                          </Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>
                     </div>
 
                     <li className="header-search">

@@ -2,8 +2,11 @@ import React from "react";
 import "./blog.css";
 import { Box } from "@mui/material";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Blog = () => {
+  const navigate = useNavigate();
   return (
     <Box>
       <Header />
@@ -23,7 +26,12 @@ const Blog = () => {
             <p className="blog-time">4 Diciembre 2019</p>
             <p>5 mins delectura</p>
           </Box>
-          <button className="btn btn-success">More info</button>
+          <button
+            onClick={() => navigate("/blogdetails/2")}
+            className="btn btn-success"
+          >
+            More info
+          </button>
         </Box>
         <Box className="blog-container-flex shadow p-4">
           <img
@@ -57,7 +65,12 @@ const Blog = () => {
             <p className="blog-time">4 Diciembre 2019</p>
             <p>5 mins delectura</p>
           </Box>
-          <button className="btn btn-success">More info</button>
+          <button
+            onClick={() => navigate("/blogdetails/2")}
+            className="btn btn-success"
+          >
+            More info
+          </button>
         </Box>
         <Box className="blog-container-flex shadow p-4">
           <img
@@ -91,7 +104,12 @@ const Blog = () => {
             <p className="blog-time">4 Diciembre 2019</p>
             <p>5 mins delectura</p>
           </Box>
-          <button className="btn btn-success">More info</button>
+          <button
+            onClick={() => navigate("/blogdetails/2")}
+            className="btn btn-success"
+          >
+            More info
+          </button>
         </Box>
         <Box className="blog-container-flex shadow p-4">
           <img
@@ -108,7 +126,12 @@ const Blog = () => {
             <p className="blog-time">4 Diciembre 2019</p>
             <p>5 mins delectura</p>
           </Box>
-          <button className="btn btn-success">More info</button>
+          <button
+            onClick={() => navigate("/blogdetails/2")}
+            className="btn btn-success"
+          >
+            More info
+          </button>
         </Box>
         <Box className="blog-container-flex shadow p-4">
           <img
@@ -125,7 +148,12 @@ const Blog = () => {
             <p className="blog-time">4 Diciembre 2019</p>
             <p>5 mins delectura</p>
           </Box>
-          <button className="btn btn-success">More info</button>
+          <button
+            className="btn btn-success"
+            onClick={() => navigate("/blogdetails/2")}
+          >
+            More info
+          </button>
         </Box>
         <Box className="blog-container-flex shadow p-4">
           <img
@@ -142,7 +170,12 @@ const Blog = () => {
             <p className="blog-time">4 Diciembre 2019</p>
             <p>5 mins delectura</p>
           </Box>
-          <button className="btn btn-success">More info</button>
+          <button
+            className="btn btn-success"
+            onClick={() => navigate("/blogdetails/2")}
+          >
+            More info
+          </button>
         </Box>
         <Box className="blog-container-flex shadow p-4">
           <img
@@ -162,6 +195,8 @@ const Blog = () => {
           <button className="btn btn-success">More info</button>
         </Box>
       </Box>
+
+      <Footer />
     </Box>
   );
 };
