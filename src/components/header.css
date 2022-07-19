@@ -35,12 +35,14 @@ header .nav-web {
     display: grid;
     grid-template-columns: 1fr 7fr 1fr;
     align-items: center;
+    gap: 1rem;
 }
 
 nav .navlinks {
-    display: flex;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 100px 100px 120px 1fr;
     align-items: center;
+    font-size: .8rem;
 }
 
 
@@ -62,7 +64,8 @@ nav .auth-flex {
 nav .logo {
     color: #fff;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
+    opacity: 1;
 }
 
 nav a {

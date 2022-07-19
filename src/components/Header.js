@@ -104,23 +104,7 @@ const Header = () => {
                       <Link to="/">Trade-in</Link>
                     </li>
                     <div className="dropdown">
-                      <Dropdown>
-                        <Dropdown.Toggle variant="success" id="dropdown-basic">
-                          Test
-                        </Dropdown.Toggle>
-
-                        <Dropdown.Menu>
-                          <Dropdown.Item href="#/action-1">
-                            Action
-                          </Dropdown.Item>
-                          <Dropdown.Item href="#/action-2">
-                            Another action
-                          </Dropdown.Item>
-                          <Dropdown.Item href="#/action-3">
-                            Something else
-                          </Dropdown.Item>
-                        </Dropdown.Menu>
-                      </Dropdown>
+                      <i class="flag flag-united-states"></i>
                     </div>
 
                     <li className="header-search">
@@ -303,18 +287,18 @@ const Header = () => {
                   <li>
                     <Link to="/repuestos">Repuesto</Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link to="/">Fundas y Protectores</Link>
-                  </li> */}
+                  </li>
                   <li>
                     <Link to="/">Accesorios</Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link to="/">Informatica y Ocio</Link>
                   </li>
                   <li>
                     <Link to="/">Material para Tiendas</Link>
-                  </li> */}
+                  </li>
                   <li>
                     <Link to="/blog">Blogs</Link>
                   </li>
