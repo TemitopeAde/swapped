@@ -1,0 +1,27 @@
+.landingpage-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing {
+    overflow-y: hidden;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:  url("../images/lady2.jpg");
+}
+
+.landing-text {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: white;
+}
+
+.landing-text h6{
+    font-size: 1.5rem;
+    line-height: 35px;
+}

@@ -26,7 +26,7 @@ const TopOffers = () => {
   };
 
   return (
-    <Box className="top-offers px-2">
+    <Box className="top-offers">
       <Header />
       <Box>
         <Box sx={{ paddingTop: "4rem" }}>
@@ -36,6 +36,7 @@ const TopOffers = () => {
               justifyContent: "space-between",
               alignItems: "center",
             }}
+            className="px-2"
           >
             <h1 className="mb-3">Top OFERTAS</h1>
 
@@ -69,7 +70,7 @@ const TopOffers = () => {
             </Box> */}
           </Box>
 
-          <Box className="top-offers-grid">
+          <Box className="top-offers-grid px-2">
             <Box
               sx={{ borderRadius: "20px" }}
               gap="20px"

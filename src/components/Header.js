@@ -10,12 +10,14 @@ import cart from "../images/cart.png";
 import hamb from "../images/menu.png";
 import closewhite from "../images/close-white.png";
 import menuI from "../images/menu.png";
-import Dropdown from "react-bootstrap/Dropdown";
+import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 
 import "./header.css";
 import Sidebar from "./Sidebar";
 import MobileSidebar from "./MobileSidebar";
 import closebtn from "../images/close-white.png";
+import es from "../images/es.svg";
+import gb from "../images/gb.svg";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -39,10 +41,39 @@ i18n
     fallbackLng: "en",
   });
 
+const countries = [
+  {
+    label: "Spain",
+    src: es,
+    link: " ",
+    value: "ES",
+  },
+  {
+    label: "English",
+    src: gb,
+    link: " ",
+    value: "GB",
+  },
+];
+
 const Header = () => {
   const [header, setHeader] = useState(true);
   const [sidebarToggle, setSidebarToggle] = useState(true);
   const [mobileSidebar, setMobileSidebar] = useState(false);
+  const [country, setCountry] = React.useState(es);
+  const [open, setOpen] = React.useState(false);
+
+  const handleChange = (event) => {
+    setCountry(event.target.value);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
   const headerRef = useRef();
   const handleClick = (e) => {
     e.preventDefault();
@@ -104,7 +135,28 @@ const Header = () => {
                       <Link to="/">Trade-in</Link>
                     </li>
                     <div className="dropdown">
-                      <i class="flag flag-united-states"></i>
+                      <form autoComplete="off">
+                        <FormControl>
+                          <InputLabel htmlFor="open-select" />
+                          <Select
+                            open={open}
+                            onClose={handleClose}
+                            onOpen={handleOpen}
+                            value={country}
+                            name="country"
+                            onChange={handleChange}
+                            inputProps={{
+                              id: "open-select",
+                            }}
+                          >
+                            {countries.map((option, key) => (
+                              <MenuItem value={option.src} key={key}>
+                                <img src={option.src} alt={option.label} />{" "}
+                              </MenuItem>
+                            ))}
+                          </Select>
+                        </FormControl>
+                      </form>
                     </div>
 
                     <li className="header-search">

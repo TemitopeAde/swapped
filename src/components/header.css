@@ -21,36 +21,73 @@ header {
     justify-content: center;
 }
 
-
-
 .elements-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
-
 header .nav-web {
     display: grid;
     grid-template-columns: 1fr 7fr 1fr;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border: none
 }
 
 nav .navlinks {
     display: grid;
-    grid-template-columns: 100px 100px 120px 1fr;
+    grid-template-columns: auto auto auto 1fr;
     align-items: center;
     font-size: .8rem;
+    gap: 1rem
 }
 
+#mui-component-select-country img {
+    width: 75px;
+    height: 25px;
+}
 
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.Mui-selected img {
+    width: 75px;
+    height: 25px;
+
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root img{
+    width: 75px;
+    height: 25px;
+}
+
+.css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: #fff !important;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 7px;
+    top: calc(50% - 0.5em);
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.54);
+}
 
 nav .auth-flex {
     display: flex;
-    align-items: center;
-    gap: 20px
+    justify-content: center;
+    gap: 1rem;
 }
 
 .auth-flex img {
@@ -97,14 +134,14 @@ header .form-control {
 .navbar-two div ul {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     justify-content: space-between;
 }
 
 .navbar-two div ul a {
     color: #fff;
     text-decoration: none;
-    font-size: .78rem;
+    font-size: .9rem;
     transition: .7s;
 }
 
@@ -113,7 +150,7 @@ header .form-control {
 }
 
 .navbar-two .title {
-    color: grey;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 

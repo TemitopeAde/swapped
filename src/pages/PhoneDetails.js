@@ -1,6 +1,5 @@
-import { Box, Stack } from "@mui/material";
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Box } from "@mui/material";
+import React from "react";
 import Header from "../components/Header";
 import ipho from "../images/iphone8.png";
 import "./phone.css";
@@ -10,10 +9,9 @@ import clock from "../images/clock.png";
 
 const PhoneDetails = () => {
   return (
-    <div className="pb-5">
+    <div className="pb-3">
       <Header />
       <Box>
-        
         <Box>
           <Box className="phonedetails-details-grid">
             <Box>
@@ -25,6 +23,14 @@ const PhoneDetails = () => {
                 </Box>
                 <Box className="phone-image-details">
                   <img src={ipho} alt="" />
+                </Box>
+
+                <Box className="text-center mt-3 mb-3">
+                  <h6>
+                    TODOS NUESTRO REPUESTOS TIENEN GARANTIA SIEMPRE QUE NO SE
+                    HAYAN INSTALADO Y VENGAN CON TODOS SUS PLASTICOS Y
+                    COMPONENTES
+                  </h6>
                 </Box>
 
                 <Box className="footer-image-icon">
@@ -55,18 +61,20 @@ const PhoneDetails = () => {
                       <input type="radio" name="color" id="negro" />
                       <label htmlFor="negro">Negro</label>
                     </div>
-                    <div className="color azul">
-                      <input type="radio" name="color" id="azul" />
-                      <label htmlFor="azul">Azul</label>
+                    <div className="color red">
+                      <input type="radio" name="color" id="red" />
+                      <label htmlFor="red">(Product)Red</label>
                     </div>
                     <div className="color coral">
                       <input type="radio" name="color" id="coral" />
                       <label htmlFor="coral">Coral</label>
                     </div>
-                    <div className="color red">
-                      <input type="radio" name="color" id="red" />
-                      <label htmlFor="red">(Product)Red</label>
+                    <div className="color azul">
+                      <input type="radio" name="color" id="azul" />
+                      <label htmlFor="azul">Azul</label>
                     </div>
+                    
+                    
                     <div className="color amarillo">
                       <input type="radio" name="color" id="amarillo" />
                       <label htmlFor="amarillo">Amarillo</label>
@@ -77,9 +85,10 @@ const PhoneDetails = () => {
                     </div>
                   </div>
 
-                  <ul style={{ listStyle: 'disc' }} className="mt-4 mb-4">
-                    <li style={{textAlign: 'center', listStyle: 'disc'}}>
-                        La calidad PREMIUM es superior a la standard, mas brillo y sensacion de uso mas parecida a la pantalla original
+                  <ul style={{ listStyle: "disc" }} className="mt-4 mb-4">
+                    <li style={{ textAlign: "center", listStyle: "disc" }}>
+                      La calidad PREMIUM es superior a la standard, mas brillo y
+                      sensacion de uso mas parecida a la pantalla original
                     </li>
                   </ul>
 
@@ -97,14 +106,12 @@ const PhoneDetails = () => {
                     </li>
                   </ul>
 
-                  
-
                   <div className="submit-btn mt-5">
                     <button
                       type="submit"
                       style={{
-                        width: "100%",
-                        background: "orange",
+                        width: "400px",
+                        background: "#fc6c33",
                         borderRadius: "30px",
                         color: "white",
                       }}
