@@ -14,8 +14,9 @@ import thumb from "../images/thumb.png";
 import trucks from "../images/trucks.png";
 import chinese from "../images/chinese.png";
 import clock from "../images/clock.png";
-import phone1 from '../images/phone1.png';
-import phone4 from '../images/phone4.png';
+import phone1 from "../images/phone1.png";
+import phone4 from "../images/phone4.png";
+
 
 const Phone = () => {
   const [image, setImage] = useState(3);
@@ -33,7 +34,6 @@ const Phone = () => {
           <Box className="phone-details-grid">
             <Box>
               <Box className="phone-image">
-                
                 <Box className="sticky-img mb-4">
                   <div>
                     <div
@@ -115,7 +115,7 @@ const Phone = () => {
             </Box>
 
             <Box className="phone-details">
-              <h1 style={{fontSize: '3rem'}}>iPhone XR</h1>
+              <h1 style={{ fontSize: "3rem" }}>iPhone XR</h1>
               <h4>64 GB - Negro - Libre</h4>
 
               <form>
@@ -339,6 +339,7 @@ const Phone = () => {
                       style={{
                         borderRadius: "30px",
                         color: "white",
+                        width: "100%",
                       }}
                       className="btn btn-anadir"
                     >
@@ -350,54 +351,165 @@ const Phone = () => {
             </Box>
 
             <Box className="details-section-advert">
-              <Box className="advert-flex">
-                <Box className="image-thumb shadow">
+              <Box
+                style={{
+                  display: "flex",
+                  justifyContent: "sapce-between",
+                  position: "relative",
+                  gap: "1rem",
+                }}
+              >
+                <Box
+                  style={{
+                    flexBasis: "30%",
+                    padding: "1.4rem",
+                    background: "#d5d5e9",
+                    paddingBottom: "6.5rem",
+                  }}
+                >
                   <img src={thumb} alt="" />
                 </Box>
-
-                <h6 className="">PRUEBALO SIN COMPROMISO DURANTE 14 DIAS</h6>
-              </Box>
-              <Box className="advert-flex">
-                <Box
-                  className="image-thumb shadow"
-                  style={{ background: "white" }}
-                >
-                  <img src={battery} alt="" />
+                <Box paddingRight={{md: 2}} className="pruebalo" style={{ flexBasis: "70%" }}>
+                  <h6
+                    style={{
+                      fontSize: ".8rem",
+                      marginTop: "22px",
+                      fontFamily: "Poppins",
+                      
+                    }}
+                    className="header-pru"
+                  >
+                    PRUEBALO SIN COMPROMISO DURANTE 14 DIAS
+                  </h6>
                 </Box>
-
-                <h6 className="" style={{ color: "blue" }}>
-                  Bateria verificada
-                </h6>
+                <Box
+                  style={{ left: "20px", position: "absolute", bottom: "20px" }}
+                >
+                  <Box
+                    style={{
+                      padding: ".6rem",
+                      background: "#ffffff",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      borderRadius: "5px",
+                      gap: "20px",
+                    }}
+                  >
+                    <Box>
+                      <img
+                        src={battery}
+                        alt=""
+                        style={{ width: "30px", height: "30px" }}
+                      />
+                    </Box>
+                    <Box className="pruebalo">
+                      <p
+                        style={{ fontSize: '1.1rem', margin: 0, padding: 0,color: "rgb(25 150 241)", fontWeight: "bold" }}
+                      >
+                        Bacteria verificada
+                      </p>
+                    </Box>
+                  </Box>
+                </Box>
               </Box>
-              <Box className="advert-flex">
-                <Box className="image-thumb shadow">
+
+              <Box
+                style={{
+                  display: "flex",
+                  justifyContent: "sapce-between",
+                  position: "relative",
+                  gap: "1rem",
+                }}
+              >
+                <Box
+                  style={{
+                    flexBasis: "30%",
+                    padding: "1.4rem",
+                    background: "#d5d5e9",
+                    paddingBottom: "6.5rem",
+                  }}
+                >
                   <img src={truck} alt="" />
                 </Box>
-
-                <h6>
-                  PEEXPEDICION INMEDIATA 48H MAXIMO EN PENINSULA. 96H ENVIOS A
-                  ISLAS Y UNION EUROPEA
-                </h6>
-              </Box>
-              <Box className="advert-flex">
-                <Box
-                  className="image-thumb shadow"
-                  style={{ background: "white" }}
-                >
-                  <img src={battery} alt="" />
+                <Box className="pruebalo" style={{ flexBasis: "70%" }}>
+                  <h6
+                    style={{
+                      fontSize: ".8rem",
+                      marginTop: "22px",
+                      fontFamily: "Poppins",
+                    }}
+                    className="header-pru"
+                  >
+                    PRUEBALO SIN COMPROMISO DURANTE 14 DIAS PRUEBALO SIN
+                    COMPROMISO DURANTE 14 DIAS
+                  </h6>
                 </Box>
-
-                <h6 style={{ color: "blue" }}>CALIDAD GARANTIZADA</h6>
+                <Box
+                  style={{ left: "20px", position: "absolute", bottom: "20px" }}
+                >
+                  <Box
+                    style={{
+                      padding: ".6rem",
+                      background: "#ffffff",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      borderRadius: "5px",
+                      gap: "20px",
+                    }}
+                  >
+                    <Box>
+                      <img
+                        src={battery}
+                        alt=""
+                        style={{ width: "30px", height: "30px" }}
+                      />
+                    </Box>
+                    <Box className="pruebalo">
+                      <p
+                        style={{ margin: 0, padding: 0, color: "rgb(25 150 241)", fontWeight: "bold", fontSize: '1.1rem' }}
+                      >
+                        CALIDAD GARANTIZADA
+                      </p>
+                    </Box>
+                  </Box>
+                </Box>
               </Box>
-              <Box className="advert-flex">
-                <Box className="image-thumb shadow">
+
+
+              <Box
+                style={{
+                  display: "flex",
+                  justifyContent: "sapce-between",
+                  position: "relative",
+                  gap: "1rem",
+                }}
+              >
+                <Box
+                  style={{
+                    flexBasis: "30%",
+                    padding: "1.4rem",
+                    background: "#d5d5e9",
+                    
+                  }}
+                >
                   <img src={verified} alt="" />
                 </Box>
-
-                <h6 style={{ textTransform: "uppercase" }}>
-                  REACONDICIONAMIENTO REALIZADO POR PROFESIONALES <br />
-                  12 meses de garantia
-                </h6>
+                <Box className="pruebalo" style={{ flexBasis: "70%" }}>
+                  <h6
+                    style={{
+                      fontSize: ".8rem",
+                      marginTop: "22px",
+                      fontFamily: "Poppins",
+                    }}
+                    className="header-pru"
+                  >
+                    PRUEBALO SIN COMPROMISO DURANTE 14 DIAS PRUEBALO SIN
+                    COMPROMISO DURANTE 14 DIAS
+                  </h6>
+                </Box>
+                
               </Box>
             </Box>
           </Box>

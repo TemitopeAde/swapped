@@ -332,6 +332,12 @@
     padding: .3rem .4rem;
 }
 
+.pruebalo h6 {
+    font-family: 'Poppins' !important;
+    font-weight: bolder;
+}
+
+
 
 @media screen and (min-width: 1600px) {
     .phone-details-grid {
@@ -359,7 +365,7 @@
 
 @media screen and (max-width: 820px) {
     .espacio-grid {
-        grid-template-columns: repeat(3, 8rem);
+        grid-template-columns: repeat(3, 6.9rem);
         gap: .3rem;
     }
     .phone-details-grid {
@@ -397,7 +403,9 @@
     }
 
     .color-grid {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 6rem);
+        gap: 1rem;
     }
 
     /* .image-nav img {
@@ -430,8 +438,15 @@
     .footer-image-icon {
         display: none;
     }
+
+    .header-pru {
+        padding-right: 3rem;
+    }
 }
 
+@media screen and (max-width: 600px) {
+
+}
 
 @media screen and (max-width: 425px) {
     .sticky-img img {
