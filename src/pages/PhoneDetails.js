@@ -110,12 +110,12 @@ const PhoneDetails = () => {
                     <button
                       type="submit"
                       style={{
-                        width: "400px",
+                        
                         background: "#fc6c33",
                         borderRadius: "30px",
                         color: "white",
                       }}
-                      className="btn"
+                      className="btn btn-anadir"
                     >
                       ANADIR A LA CESTA
                     </button>

@@ -3,11 +3,10 @@ import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Header from "../components/Header";
 import iph from "../images/iph.png";
-import iphone from "../images/iphone8.png";
+import iphone from "../images/newPhone.png";
 import ipho from "../images/ipho.png";
 import "./phone.css";
-import phone from "../images/i.png";
-
+import phone from "../images/phone2.png";
 import battery from "../images/battery.png";
 import truck from "../images/truck.png";
 import verified from "../images/verified.png";
@@ -15,6 +14,8 @@ import thumb from "../images/thumb.png";
 import trucks from "../images/trucks.png";
 import chinese from "../images/chinese.png";
 import clock from "../images/clock.png";
+import phone1 from '../images/phone1.png';
+import phone4 from '../images/phone4.png';
 
 const Phone = () => {
   const [image, setImage] = useState(3);
@@ -25,46 +26,42 @@ const Phone = () => {
     <div className="pb-5">
       <Header />
       <Box>
-        <h6 className="mt-4">
+        <h6 className="mt-4 px-3">
           NUSESTROS REACONDICIONADOS / IPHONE XR / IPHONE XR 64GB
         </h6>
         <Box>
           <Box className="phone-details-grid">
             <Box>
               <Box className="phone-image">
-                <Box>
-                  <h6 style={{ fontSize: ".8rem", paddingLeft: "1rem" }}>
-                    NUESTROS REACONDICIONADOS / IPHONE XR / IPHONE XR 64GB
-                  </h6>
-                </Box>
-                <Box className="sticky-img">
+                
+                <Box className="sticky-img mb-4">
                   <div>
                     <div
                       className={
                         image === 1 ? "slider-image toggle" : "slider-image"
                       }
                     >
-                      <img src={phone} alt="" />
+                      <img src={phone1} alt="" />
                     </div>
                     <div
                       className={
                         image === 2 ? "slider-image toggle" : "slider-image"
                       }
                     >
-                      <img src={iph} alt="" />
+                      <img src={phone4} alt="" />
                     </div>
                     <div
                       className={
                         image === 3 ? "slider-image toggle" : "slider-image"
                       }
                     >
-                      <img src={ipho} alt="" />
+                      <img src={iphone} alt="" />
                     </div>
                   </div>
                 </Box>
 
                 <div className="image-nav">
-                  <Stack>
+                  <Stack spacing={1}>
                     <Box>
                       <button
                         onClick={() => setImage(1)}
@@ -72,7 +69,7 @@ const Phone = () => {
                       >
                         <img
                           className={image === 1 ? "image-opacity" : ""}
-                          src={phone}
+                          src={phone1}
                           alt=""
                         />
                       </button>
@@ -83,7 +80,7 @@ const Phone = () => {
                     >
                       <img
                         className={image === 2 ? "image-opacity" : ""}
-                        src={iph}
+                        src={phone4}
                         alt=""
                       />
                     </button>
@@ -93,7 +90,7 @@ const Phone = () => {
                     >
                       <img
                         className={image === 3 ? "image-opacity" : ""}
-                        src={ipho}
+                        src={iphone}
                         alt=""
                       />
                     </button>
@@ -110,16 +107,15 @@ const Phone = () => {
                     <span>Pago segura</span>
                   </Box>
                   <Box className="footer-icons-image">
-                  <img src={clock} alt="" />
+                    <img src={clock} alt="" />
                     <span>Garantia y devoluciones</span>
-                    
                   </Box>
                 </Box>
               </Box>
             </Box>
 
             <Box className="phone-details">
-              <h2>iPhone XR</h2>
+              <h1 style={{fontSize: '3rem'}}>iPhone XR</h1>
               <h4>64 GB - Negro - Libre</h4>
 
               <form>
@@ -341,12 +337,10 @@ const Phone = () => {
                     <button
                       type="submit"
                       style={{
-                        width: "100%",
-                        background: "orange",
                         borderRadius: "30px",
                         color: "white",
                       }}
-                      className="btn"
+                      className="btn btn-anadir"
                     >
                       ANADIR A LA CESTA
                     </button>

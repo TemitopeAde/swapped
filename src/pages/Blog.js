@@ -17,7 +17,7 @@ const Blog = () => {
             src="https://neilpatel.com/wp-content/uploads/2017/09/blog-post-image-guide.jpg"
             alt=""
           />
-          <button className="blog-subtitle" style={{ border: "none" }}>
+          <button className="blog-subtitle btn btn-danger" style={{ border: "none" }}>
             Un equipazo
           </button>
           <h2 style={{ fontSize: "1.5rem" }} className="mt-1 mb-1">
@@ -95,7 +95,7 @@ const Blog = () => {
             src="https://neilpatel.com/wp-content/uploads/2017/09/blog-post-image-guide.jpg"
             alt=""
           />
-          <button className="blog-subtitle" style={{ border: "none" }}>
+          <button className="blog-subtitle btn btn-danger" style={{ border: "none" }}>
             Un equipazo
           </button>
           <h2 style={{ fontSize: "1.5rem" }} className="mt-1 mb-1">
@@ -161,7 +161,7 @@ const Blog = () => {
             src="https://neilpatel.com/wp-content/uploads/2017/09/blog-post-image-guide.jpg"
             alt=""
           />
-          <button className="blog-subtitle" style={{ border: "none" }}>
+          <button className="blog-subtitle btn btn-danger" style={{ border: "none" }}>
             Un equipazo
           </button>
           <h2 style={{ fontSize: "1.5rem" }} className="mt-1 mb-1">
