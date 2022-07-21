@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 33% 36% 22%;
     gap: 3rem;
-    
+
 }
 
 .color input[type="radio"] {
@@ -17,7 +17,7 @@
 
 .color label,
 .espacio label {
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Poppins';
     padding: .4rem 2rem;
     border-radius: 5px;
@@ -43,8 +43,8 @@
 
 .color label:before {
     content: '';
-    height: 10px;
-    width: 10px;
+    height: 9px;
+    width: 9px;
     border-radius: 50%;
     margin-right: 10px;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
@@ -96,13 +96,13 @@
 
 .color-grid {
     display: grid;
-    grid-template-columns: repeat(3, 10rem);
+    grid-template-columns: repeat(3, 9.0rem);
     gap: 1rem;
 }
 
 .espacio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 10rem);
+    grid-template-columns: repeat(3, 9.0rem);
     gap: 1rem;
 }
 
@@ -348,20 +348,64 @@
         gap: 3%;
         padding-bottom: 7.5rem;
     }
-    
+
     .color-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 12rem);
-        gap: 1rem;
+
+        grid-template-columns: repeat(3, 11.3rem);
+
     }
-    
+
     .espacio-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 12rem);
-        gap: 1rem;
+
+        grid-template-columns: repeat(3, 11.3rem);
+
     }
 
 }
+
+@media screen and (min-width: 1920px) {
+
+    .color-grid {
+        grid-template-columns: repeat(3, 13.7rem);
+    }
+
+    .espacio-grid {
+        grid-template-columns: repeat(3, 13.7rem);
+
+    }
+
+}
+
+
+@media screen and (min-width: 2256px) {
+
+    .color-grid {
+        grid-template-columns: repeat(3, 16.3rem);
+    }
+
+    .espacio-grid {
+        grid-template-columns: repeat(3, 16.3rem);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 820px) {
@@ -369,6 +413,7 @@
         grid-template-columns: repeat(3, 6.9rem);
         gap: .3rem;
     }
+
     .phone-details-grid {
         grid-template-columns: 1fr;
         padding: 0 1rem;
@@ -445,9 +490,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-
-}
+@media screen and (max-width: 600px) {}
 
 @media screen and (max-width: 425px) {
     .sticky-img img {

@@ -38,30 +38,30 @@ const Footer = () => {
         <Box>
           <ul>
             <li>
-              <Link to="/">Privacy Policy</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
             <li>
-              <Link to="/">Cookie Policy</Link>
+              <Link to="/cookie-policy">Cookie Policy</Link>
             </li>
             <li>
-              <Link to="/">Auction Policy</Link>
+              <Link to="/auction-policy">Auction Policy</Link>
             </li>
             <li>
-              <Link to="/">Website Terms of Use</Link>
+              <Link to="/website-use-terms">Website Terms of Use</Link>
             </li>
             <li>
-              <Link to="/">Sale Terms & Conditions</Link>
+              <Link to="/sales-terms-and-conditions">Sale Terms & Conditions</Link>
             </li>
             <li>
-              <Link to="/">Preguntas Frecuentes</Link>
+              <Link to="/preguntas">Preguntas Frecuentes</Link>
             </li>
             <li>
-              <Link to="/">Contacto</Link>
+              <Link to="/contact-us">Contacto</Link>
             </li>
           </ul>
         </Box>
         <Box>
-          <p>Copyright www.reswapped.com</p>
+          <p style={{fontSize: '0.8rem'}}>Copyright www.reswapped.com</p>
         </Box>
       </Box>
     </div>

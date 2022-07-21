@@ -166,6 +166,7 @@ const Header = () => {
                             type="text"
                             className="form-control"
                             placeholder="Are you looking for an iPhone 11, MacBook, Samsung"
+                            maxLength="45"
                           />
 
                           <Box postion="absolute" className="search-box-header">

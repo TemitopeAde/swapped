@@ -236,7 +236,7 @@ const Filter = ({ setShowMobileFilter, showMobileFilter }) => {
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
-                  excelente
+                  Brand New
                 </label>
               </div>
               <div class="form-check">
@@ -247,7 +247,7 @@ const Filter = ({ setShowMobileFilter, showMobileFilter }) => {
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
-                  bueno
+                  A+
                 </label>
               </div>
               <div class="form-check">
@@ -258,7 +258,40 @@ const Filter = ({ setShowMobileFilter, showMobileFilter }) => {
                   id="flexCheckDefault"
                 />
                 <label class="form-check-label" for="flexCheckDefault">
-                  justo
+                  A/A-
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  AB
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  BC
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  D
                 </label>
               </div>
             </AccordionDetails>

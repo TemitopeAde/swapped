@@ -26,7 +26,7 @@ const Phone = () => {
     <div className="pb-5">
       <Header />
       <Box>
-        <h6 className="mt-4 px-3">
+        <h6 style={{ fontSize: '0.77rem'}} className="mt-4 px-3">
           NUSESTROS REACONDICIONADOS / IPHONE XR / IPHONE XR 64GB
         </h6>
         <Box>
@@ -178,7 +178,7 @@ const Phone = () => {
                         <input type="radio" name="condicion" id="bueno" />
                         <label htmlFor="bueno">
                           <div style={{ height: "50px", textAlign: "center" }}>
-                            <h6>Bueno</h6>
+                            <h6 style={{fontSize: '.85rem'}}>Bueno</h6>
                             <p>289 $</p>
                           </div>
                         </label>
@@ -187,7 +187,7 @@ const Phone = () => {
                         <input type="radio" name="condicion" id="muy-bueno" />
                         <label htmlFor="muy-bueno">
                           <div style={{ height: "50px", textAlign: "center" }}>
-                            <h6>Muy Bueno</h6>
+                            <h6 style={{fontSize: '.85rem'}}>Muy Bueno</h6>
                             <p>309 $</p>
                           </div>
                         </label>
@@ -196,7 +196,7 @@ const Phone = () => {
                         <input type="radio" name="condicion" id="excelente" />
                         <label htmlFor="excelente">
                           <div style={{ height: "50px", textAlign: "center" }}>
-                            <h6>Excelente</h6>
+                            <h6 style={{fontSize: '.85rem'}}>Excelente</h6>
                             <p>329 $</p>
                           </div>
                         </label>
