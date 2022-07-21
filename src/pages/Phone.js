@@ -17,7 +17,6 @@ import clock from "../images/clock.png";
 import phone1 from "../images/phone1.png";
 import phone4 from "../images/phone4.png";
 
-
 const Phone = () => {
   const [image, setImage] = useState(3);
 
@@ -369,13 +368,16 @@ const Phone = () => {
                 >
                   <img src={thumb} alt="" />
                 </Box>
-                <Box paddingRight={{md: 2}} className="pruebalo" style={{ flexBasis: "70%" }}>
+                <Box
+                  paddingRight={{ md: 2 }}
+                  className="pruebalo"
+                  style={{ flexBasis: "70%" }}
+                >
                   <h6
                     style={{
                       fontSize: ".8rem",
                       marginTop: "22px",
                       fontFamily: "Poppins",
-                      
                     }}
                     className="header-pru"
                   >
@@ -405,7 +407,13 @@ const Phone = () => {
                     </Box>
                     <Box className="pruebalo">
                       <p
-                        style={{ fontSize: '1.1rem', margin: 0, padding: 0,color: "rgb(25 150 241)", fontWeight: "bold" }}
+                        style={{
+                          fontSize: "1.1rem",
+                          margin: 0,
+                          padding: 0,
+                          color: "rgb(25 150 241)",
+                          fontWeight: "bold",
+                        }}
                       >
                         Bacteria verificada
                       </p>
@@ -468,7 +476,13 @@ const Phone = () => {
                     </Box>
                     <Box className="pruebalo">
                       <p
-                        style={{ margin: 0, padding: 0, color: "rgb(25 150 241)", fontWeight: "bold", fontSize: '1.1rem' }}
+                        style={{
+                          margin: 0,
+                          padding: 0,
+                          color: "rgb(25 150 241)",
+                          fontWeight: "bold",
+                          fontSize: "1.1rem",
+                        }}
                       >
                         CALIDAD GARANTIZADA
                       </p>
@@ -476,7 +490,6 @@ const Phone = () => {
                   </Box>
                 </Box>
               </Box>
-
 
               <Box
                 style={{
@@ -491,7 +504,6 @@ const Phone = () => {
                     flexBasis: "30%",
                     padding: "1.4rem",
                     background: "#d5d5e9",
-                    
                   }}
                 >
                   <img src={verified} alt="" />
@@ -503,13 +515,20 @@ const Phone = () => {
                       marginTop: "22px",
                       fontFamily: "Poppins",
                     }}
-                    className="header-pru"
+                    className="header-pru mb-3"
                   >
-                    PRUEBALO SIN COMPROMISO DURANTE 14 DIAS PRUEBALO SIN
-                    COMPROMISO DURANTE 14 DIAS
+                    REACONDICIONAMIENTO REALIZADO POR PROFESIONALES
+                  </h6>
+                  <h6
+                    style={{
+                      fontSize: ".8rem",
+                      marginTop: "22px",
+                      fontFamily: "Poppins",
+                    }}
+                  >
+                    12 MESES DE GARANTIA
                   </h6>
                 </Box>
-                
               </Box>
             </Box>
           </Box>

@@ -38,7 +38,7 @@ const TopOffers = () => {
             }}
             className="px-2"
           >
-            <h1 className="mb-3">Top OFERTAS</h1>
+            <h1 className="mb-4" style={{fontFamily: 'Open Sans', fontWeight: 'bold'}}>Top OFERTAS</h1>
 
             {/* <Box
               style={{
