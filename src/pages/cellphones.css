@@ -36,8 +36,9 @@
 
 .flex-between h6 {
     text-align: center;
-    color: #03c51d;
+    color: rgb(146, 204, 59) !important;
     font-weight: bolder;
+    font-size: .8rem;
 }
 
 

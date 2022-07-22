@@ -101,7 +101,11 @@ const Request = () => {
 
               {showMore === false ? (
                 <button
-                  style={{ background: "none", border: "none", fontWeight: '100'}}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    fontWeight: "100",
+                  }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowMore(!showMore);
@@ -111,7 +115,11 @@ const Request = () => {
                 </button>
               ) : (
                 <button
-                  style={{ background: "none", border: "none", fontWeight: '100' }}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    fontWeight: "100",
+                  }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowMore(!showMore);
@@ -199,7 +207,11 @@ const Request = () => {
 
               {showModel === false ? (
                 <button
-                  style={{ background: "none", border: "none", fontWeight: '100' }}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    fontWeight: "100",
+                  }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowModel(!showModel);
@@ -209,7 +221,11 @@ const Request = () => {
                 </button>
               ) : (
                 <button
-                  style={{ background: "none", border: "none", fontWeight: '100' }}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    fontWeight: "100",
+                  }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowModel(!showModel);
@@ -297,7 +313,11 @@ const Request = () => {
 
               {showSize === false ? (
                 <button
-                  style={{ background: "none", border: "none", fontWeight: '100' }}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    fontWeight: "100",
+                  }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowSize(!showSize);
@@ -307,7 +327,11 @@ const Request = () => {
                 </button>
               ) : (
                 <button
-                  style={{ background: "none", border: "none", fontWeight: '100' }}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    fontWeight: "100",
+                  }}
                   onClick={(e) => {
                     e.preventDefault();
                     setShowSize(!showSize);
@@ -317,8 +341,6 @@ const Request = () => {
                 </button>
               )}
             </Box>
-
-           
 
             <Box className="mb-5 mt-5">
               <h6 className="mb-3">Color</h6>
@@ -418,7 +440,12 @@ const Request = () => {
                 marginTop: "2rem",
               }}
             >
-              <h1 className="mb-5">REPUESTOS</h1>
+              <h1
+                style={{ fontWeight: "bold", fontSize: "1.8rem" }}
+                className="mb-5"
+              >
+                REPUESTOS
+              </h1>
 
               <Box
                 style={{
@@ -453,7 +480,9 @@ const Request = () => {
             <Box className="cellphone-grid">
               <Box className="shadow request-items p-4">
                 <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
+                  <h6 style={{ fontWeight: "bold" }}>
+                    Pantalla Completa para Iphone XS Negra OEM
+                  </h6>
                 </Box>
 
                 <Box>
@@ -497,7 +526,9 @@ const Request = () => {
               </Box>
               <Box className="shadow request-items p-4">
                 <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
+                  <h6 style={{ fontWeight: "bold" }}>
+                    Pantalla Completa para Iphone XS Negra PREMIUM
+                  </h6>
                 </Box>
 
                 <Box>
@@ -541,7 +572,9 @@ const Request = () => {
               </Box>
               <Box className="shadow request-items p-4">
                 <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
+                  <h6 style={{ fontWeight: "bold" }}>
+                    Pantalla Completa para Iphone XS Negra STANDARD
+                  </h6>
                 </Box>
 
                 <Box>
@@ -585,7 +618,50 @@ const Request = () => {
               </Box>
               <Box className="shadow request-items p-4">
                 <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
+                  <h6 style={{ fontWeight: "bold" }}>Iphone XS Max</h6>
+                  <p style={{ fontWeight: "bold" }}>€130 - €440</p>
+                </Box>
+
+                <Box className="repuestos-grid">
+                  <Box>
+                    <Stack
+                      spacing={3}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <div className="gray-circle"></div>
+                      <h6>Nuevo</h6>
+                    </Stack>
+                  </Box>
+                  <Box className="repuestos-grid-images">
+                    <img src={iph} alt="" />
+                    <img src={iph} alt="" />
+                  </Box>
+                </Box>
+                <Box className="flex-between mt-1">
+                  <Box>
+                    <h6>
+                      PRODUCTO <br /> EN STOCK{" "}
+                    </h6>
+                  </Box>
+
+                  <Box>
+                    <button
+                      style={{ fontSize: ".7rem", borderRadius: "30px" }}
+                      className="btn btn-success"
+                    >
+                      MORE INFO
+                    </button>
+                  </Box>
+                </Box>
+              </Box>
+              <Box className="shadow request-items p-4">
+                <Box>
+                  <h6 style={{ fontWeight: "bold" }}>IPhone XR</h6>
+                  <h6 style={{ fontWeight: "bold" }}>€85.00 - €295.00</h6>
                 </Box>
 
                 <Box>
@@ -629,403 +705,8 @@ const Request = () => {
               </Box>
               <Box className="shadow request-items p-4">
                 <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
-                </Box>
-
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
-                <Box className="repuestos-grid">
-                  <Box>
-                    <Stack
-                      spacing={3}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div className="gray-circle"></div>
-                      <h6>Nuevo</h6>
-                    </Stack>
-                  </Box>
-                  <Box className="repuestos-grid-images">
-                    <img src={iph} alt="" />
-                    <img src={iph} alt="" />
-                  </Box>
-                </Box>
-                <Box className="flex-between mt-1">
-                  <Box>
-                    <h6>
-                      PRODUCTO <br /> EN STOCK{" "}
-                    </h6>
-                  </Box>
-
-                  <Box>
-                    <button
-                      style={{ fontSize: ".7rem", borderRadius: "30px" }}
-                      className="btn btn-success"
-                    >
-                      MORE INFO
-                    </button>
-                  </Box>
-                </Box>
-              </Box>
-              <Box className="shadow request-items p-4">
-                <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
-                </Box>
-
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
-                <Box className="repuestos-grid">
-                  <Box>
-                    <Stack
-                      spacing={3}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div className="gray-circle"></div>
-                      <h6>Nuevo</h6>
-                    </Stack>
-                  </Box>
-                  <Box className="repuestos-grid-images">
-                    <img src={iph} alt="" />
-                    <img src={iph} alt="" />
-                  </Box>
-                </Box>
-                <Box className="flex-between mt-1">
-                  <Box>
-                    <h6>
-                      PRODUCTO <br /> EN STOCK{" "}
-                    </h6>
-                  </Box>
-
-                  <Box>
-                    <button
-                      style={{ fontSize: ".7rem", borderRadius: "30px" }}
-                      className="btn btn-success"
-                    >
-                      MORE INFO
-                    </button>
-                  </Box>
-                </Box>
-              </Box>
-              <Box className="shadow request-items p-4">
-                <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
-                </Box>
-
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
-                <Box className="repuestos-grid">
-                  <Box>
-                    <Stack
-                      spacing={3}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div className="gray-circle"></div>
-                      <h6>Nuevo</h6>
-                    </Stack>
-                  </Box>
-                  <Box className="repuestos-grid-images">
-                    <img src={iph} alt="" />
-                    <img src={iph} alt="" />
-                  </Box>
-                </Box>
-                <Box className="flex-between mt-1">
-                  <Box>
-                    <h6>
-                      PRODUCTO <br /> EN STOCK{" "}
-                    </h6>
-                  </Box>
-
-                  <Box>
-                    <button
-                      style={{ fontSize: ".7rem", borderRadius: "30px" }}
-                      className="btn btn-success"
-                    >
-                      MORE INFO
-                    </button>
-                  </Box>
-                </Box>
-              </Box>
-              <Box className="shadow request-items p-4">
-                <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
-                </Box>
-
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
-                <Box className="repuestos-grid">
-                  <Box>
-                    <Stack
-                      spacing={3}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div className="gray-circle"></div>
-                      <h6>Nuevo</h6>
-                    </Stack>
-                  </Box>
-                  <Box className="repuestos-grid-images">
-                    <img src={iph} alt="" />
-                    <img src={iph} alt="" />
-                  </Box>
-                </Box>
-                <Box className="flex-between mt-1">
-                  <Box>
-                    <h6>
-                      PRODUCTO <br /> EN STOCK{" "}
-                    </h6>
-                  </Box>
-
-                  <Box>
-                    <button
-                      style={{ fontSize: ".7rem", borderRadius: "30px" }}
-                      className="btn btn-success"
-                    >
-                      MORE INFO
-                    </button>
-                  </Box>
-                </Box>
-              </Box>
-              <Box className="shadow request-items p-4">
-                <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
-                </Box>
-
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
-                <Box className="repuestos-grid">
-                  <Box>
-                    <Stack
-                      spacing={3}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div className="gray-circle"></div>
-                      <h6>Nuevo</h6>
-                    </Stack>
-                  </Box>
-                  <Box className="repuestos-grid-images">
-                    <img src={iph} alt="" />
-                    <img src={iph} alt="" />
-                  </Box>
-                </Box>
-                <Box className="flex-between mt-1">
-                  <Box>
-                    <h6>
-                      PRODUCTO <br /> EN STOCK{" "}
-                    </h6>
-                  </Box>
-
-                  <Box>
-                    <button
-                      style={{ fontSize: ".7rem", borderRadius: "30px" }}
-                      className="btn btn-success"
-                    >
-                      MORE INFO
-                    </button>
-                  </Box>
-                </Box>
-              </Box>
-              <Box className="shadow request-items p-4">
-                <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
-                </Box>
-
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
-                <Box className="repuestos-grid">
-                  <Box>
-                    <Stack
-                      spacing={3}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div className="gray-circle"></div>
-                      <h6>Nuevo</h6>
-                    </Stack>
-                  </Box>
-                  <Box className="repuestos-grid-images">
-                    <img src={iph} alt="" />
-                    <img src={iph} alt="" />
-                  </Box>
-                </Box>
-                <Box className="flex-between mt-1">
-                  <Box>
-                    <h6>
-                      PRODUCTO <br /> EN STOCK{" "}
-                    </h6>
-                  </Box>
-
-                  <Box>
-                    <button
-                      style={{ fontSize: ".7rem", borderRadius: "30px" }}
-                      className="btn btn-success"
-                    >
-                      MORE INFO
-                    </button>
-                  </Box>
-                </Box>
-              </Box>
-              <Box className="shadow request-items p-4">
-                <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
-                </Box>
-
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
-                <Box className="repuestos-grid">
-                  <Box>
-                    <Stack
-                      spacing={3}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div className="gray-circle"></div>
-                      <h6>Nuevo</h6>
-                    </Stack>
-                  </Box>
-                  <Box className="repuestos-grid-images">
-                    <img src={iph} alt="" />
-                    <img src={iph} alt="" />
-                  </Box>
-                </Box>
-                <Box className="flex-between mt-1">
-                  <Box>
-                    <h6>
-                      PRODUCTO <br /> EN STOCK{" "}
-                    </h6>
-                  </Box>
-
-                  <Box>
-                    <button
-                      style={{ fontSize: ".7rem", borderRadius: "30px" }}
-                      className="btn btn-success"
-                    >
-                      MORE INFO
-                    </button>
-                  </Box>
-                </Box>
-              </Box>
-              <Box className="shadow request-items p-4">
-                <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
-                </Box>
-
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
-                <Box className="repuestos-grid">
-                  <Box>
-                    <Stack
-                      spacing={3}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div className="gray-circle"></div>
-                      <h6>Nuevo</h6>
-                    </Stack>
-                  </Box>
-                  <Box className="repuestos-grid-images">
-                    <img src={iph} alt="" />
-                    <img src={iph} alt="" />
-                  </Box>
-                </Box>
-                <Box className="flex-between mt-1">
-                  <Box>
-                    <h6>
-                      PRODUCTO <br /> EN STOCK{" "}
-                    </h6>
-                  </Box>
-
-                  <Box>
-                    <button
-                      style={{ fontSize: ".7rem", borderRadius: "30px" }}
-                      className="btn btn-success"
-                    >
-                      MORE INFO
-                    </button>
-                  </Box>
-                </Box>
-              </Box>
-              <Box className="shadow request-items p-4">
-                <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
-                </Box>
-
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
-                <Box className="repuestos-grid">
-                  <Box>
-                    <Stack
-                      spacing={3}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <div className="gray-circle"></div>
-                      <h6>Nuevo</h6>
-                    </Stack>
-                  </Box>
-                  <Box className="repuestos-grid-images">
-                    <img src={iph} alt="" />
-                    <img src={iph} alt="" />
-                  </Box>
-                </Box>
-                <Box className="flex-between mt-1">
-                  <Box>
-                    <h6>
-                      PRODUCTO <br /> EN STOCK{" "}
-                    </h6>
-                  </Box>
-
-                  <Box>
-                    <button
-                      style={{ fontSize: ".7rem", borderRadius: "30px" }}
-                      className="btn btn-success"
-                    >
-                      MORE INFO
-                    </button>
-                  </Box>
-                </Box>
-              </Box>
-              <Box className="shadow request-items p-4">
-                <Box>
-                  <h6>Pantalla Completa para Iphone XS Negra OEM</h6>
+                  <h6 style={{ fontWeight: "bold" }}>iPhone XS</h6>
+                  <h6 style={{ fontWeight: "bold" }}>€85.00 - €330.00</h6>
                 </Box>
 
                 <Box>
@@ -1119,8 +800,6 @@ const Request = () => {
       <Box>
         <Sort showSort={showSort} setShowSort={setShowSort} />
       </Box>
-
-      
     </Box>
   );
 };

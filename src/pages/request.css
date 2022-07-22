@@ -15,14 +15,25 @@
 
 .filter-bar button {
     margin-top: 1rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     text-decoration: underline;
 }
 
+.cellphone-grid .bolder {
+    font-size: 1.15rem;
+}
 
 .repuestos-grid {
     display: grid;
     grid-template-columns: 100px 1fr;
+}
+
+.repuestos-grid h6 {
+    color: rgb(146, 204, 59) !important;
+}
+
+.btn.btn-success {
+    background: rgb(146, 204, 59) !important;
 }
 
 .gray-circle {
@@ -74,7 +85,7 @@
         gap: 5rem
     }
 
-    .filter-request-container{
+    .filter-request-container {
         display: block;
         position: fixed;
         bottom: 0;
@@ -86,24 +97,5 @@
         padding: 1rem 0;
     }
 
-    
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
