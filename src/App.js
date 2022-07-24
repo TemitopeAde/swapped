@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import TopOffers from "./pages/TopOffers";
 import "./App.css";
-import Home from "./pages/Home";
 import CellPhones from "./pages/CellPhones";
 import Phone from "./pages/Phone";
 import "bootstrap/dist/css/bootstrap.min.css";

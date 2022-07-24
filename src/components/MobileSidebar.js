@@ -55,9 +55,9 @@ const MobilESidebar = ({ sidebar }) => {
         <Box className="mobile-others">
           <ul className="mobile-second-list">
             <li>
-              <Link to="/">
+              <Link to="/top-offers">
                 <span style={{ marginRight: "10px" }}>
-                  <img style={{ width: "25px" }} src={trade} alt="" />
+                  <img style={{ width: "25px" }} src={verified} alt="" />
                 </span>
                 Top OFERTAS
               </Link>
@@ -65,9 +65,9 @@ const MobilESidebar = ({ sidebar }) => {
           </ul>
           <ul className="mobile-third-list">
             <li>
-              <Link to="/">
+              <Link to="/smartphones">
                 <span style={{ marginRight: "10px" }}>
-                  <img style={{ width: "25px" }} src={quality} alt="" />
+                  <img style={{ width: "25px" }} src={verified} alt="" />
                 </span>
                 Smartphones Nuevos
               </Link>
@@ -85,7 +85,7 @@ const MobilESidebar = ({ sidebar }) => {
           </ul>
           <ul className="mobile-fort-list">
             <li>
-              <Link to="/">
+              <Link to="/repuestos">
                 <span style={{ marginRight: "10px" }}>
                   <img style={{ width: "25px" }} src={verified} alt="" />
                 </span>
@@ -135,7 +135,7 @@ const MobilESidebar = ({ sidebar }) => {
           </ul>
           <ul className="mobile-fort-list">
             <li>
-              <Link to="/">
+              <Link to="/blog">
                 <span style={{ marginRight: "10px" }}>
                   <img style={{ width: "25px" }} src={verified} alt="" />
                 </span>

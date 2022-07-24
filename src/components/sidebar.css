@@ -118,7 +118,7 @@
 
 
 .mobile-first-list a {
-    padding: 10px 40px;
+    padding: 7px 40px;
     display: block;
     font-size: 1.3rem;
 }
@@ -143,10 +143,11 @@
 .mobile-third-list a,
 .mobile-second-list a {
     display: block;
-    padding: 10px 0;
+    padding: 7px 0;
     transition: .8s;
     color: black;
     text-decoration: none;
+    font-size: 0.9rem;
 }
 
 
@@ -160,6 +161,7 @@
 
 .mobile-first-list a {
     transition: .8s;
+    font-size: .9rem;
 }
 
 .mobile-sidebar-container {
