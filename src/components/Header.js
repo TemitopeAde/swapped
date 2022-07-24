@@ -18,6 +18,8 @@ import MobileSidebar from "./MobileSidebar";
 import closebtn from "../images/close-white.png";
 import es from "../images/es.svg";
 import gb from "../images/gb.svg";
+import Modal from "../Sidebar/index";
+import SidebarContent from "./SidebarContent";
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -62,6 +64,10 @@ const Header = () => {
   const [mobileSidebar, setMobileSidebar] = useState(false);
   const [country, setCountry] = React.useState(es);
   const [open, setOpen] = React.useState(false);
+  const [mode, setMode] = React.useState(false);
+  const [show, setShow] = useState(1);
+  const modalRef = useRef();
+  console.log(modalRef.current);
 
   const handleChange = (event) => {
     setCountry(event.target.value);
@@ -297,7 +303,10 @@ const Header = () => {
                     outline: "none",
                   }}
                   className="title"
-                  onClick={() => setSidebarToggle(!sidebarToggle)}
+                  // onClick={() => setSidebarToggle(!sidebarToggle)}
+                  onClick={() => {
+                   setMode(!mode)
+                  }}
                 >
                   <img
                     style={{ width: "20px", height: "20px" }}
@@ -314,7 +323,10 @@ const Header = () => {
                     outline: "none",
                   }}
                   className="title"
-                  onClick={() => setSidebarToggle(!sidebarToggle)}
+                  onClick={() => {
+                    setMode(!mode)
+                   }}
+                  // onClick={() => setSidebarToggle(!sidebarToggle)}
                 >
                   <img
                     style={{ width: "20px", height: "20px" }}
@@ -360,16 +372,135 @@ const Header = () => {
             </Box>
           </Box>
 
-          <Box
-            className={
-              sidebarToggle
-                ? "header-sidebar toggle shadow"
-                : "header-sidebar shadow"
-            }
-            id="web-sidebar"
-          >
-            <Sidebar />
-          </Box>
+          {mode && (
+            <Box>
+              <div ref={modalRef} className="modalmode">
+                <div className="modal-content">
+                  <Box className="sidebar-container">
+                    <Box className="sidebar">
+                      <ul className="first-list">
+                        <li>
+                          <Link
+                            className={show === 1 ? "color-red" : ""}
+                            to="/"
+                            onClick={() => setShow(1)}
+                          >
+                            Smartphones
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className={show === 2 ? "color-red" : ""}
+                            to="/"
+                            onClick={() => setShow(2)}
+                          >
+                            MacBook
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className={show === 3 ? "color-red" : ""}
+                            to="/"
+                            onClick={() => setShow(3)}
+                          >
+                            iPad & Tablets
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className={show === 4 ? "color-red" : ""}
+                            to="/"
+                            onClick={() => setShow(4)}
+                          >
+                            Informatica y Accesories
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className={show === 5 ? "color-red" : ""}
+                            to="/"
+                            onClick={() => setShow(5)}
+                          >
+                            Coleccion Apple
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className={show === 6 ? "color-red" : ""}
+                            to="/"
+                            onClick={() => setShow(6)}
+                          >
+                            Cascos, Altavoces y Audio
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className={show === 7 ? "color-red" : ""}
+                            to="/"
+                            onClick={() => setShow(7)}
+                          >
+                            Apple watch
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className={show === 8 ? "color-red" : ""}
+                            to="/"
+                            onClick={() => setShow(8)}
+                          >
+                            Accessorios
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className={show === 9 ? "color-red" : ""}
+                            to="/"
+                            onClick={() => setShow(9)}
+                          >
+                            Televisores y Sonido
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className={show === 10 ? "color-red" : ""}
+                            to="/"
+                            onClick={() => setShow(10)}
+                          >
+                            Tienda oficial
+                          </Link>
+                        </li>
+                      </ul>
+                    </Box>
+                    <Box className="sidebar-content" position="relative">
+                      <SidebarContent show={show} />
+
+                      <Box
+                        position="absolute"
+                        sx={{ right: "20px", top: "-20px" }}
+                      >
+                        <button
+                          style={{
+                           border: 'none',
+                           background: 'none',
+                            fontSize: '3rem'
+                          }}
+                          onClick={() => setMode(false)}
+                        >
+                          <span
+                            style={{ fontSize: "2rem" }}
+                            class="clo"
+                          >
+                            &times;
+                          </span>
+                        </button>
+                      </Box>
+                    </Box>
+                  </Box>
+                </div>
+              </div>
+            </Box>
+          )}
+
 
           <Box id="mobile-sidebar">
             <MobileSidebar sidebar={mobileSidebar} />

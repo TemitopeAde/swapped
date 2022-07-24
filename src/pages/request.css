@@ -8,6 +8,64 @@
     width: 3.5rem;
 }
 
+.form-check-label {
+    font-size: .8rem;
+    font-family: 'Poppins';
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon > i {
+    position: absolute;
+    display: block;
+    transform: translate(0,-50%);
+    top: 50%;
+    pointer-events: none;
+    width: 25px;
+    text-align: center;
+    font-style: normal;
+}
+
+.input-icon > input {
+    padding-left: 25px;
+    padding-right: 0;
+}
+
+.MuiHandleComponent-root-3 {
+    background-color: #807f81 !important;
+
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+    font-family: 'Poppins';
+    font-size: .8rem;
+}
+
+input[type=number]:focus {
+box-shadow: none;
+}
+
+.rangeslide {
+    
+}
+
+form h6 {
+    font-size: .8rem;
+}
+
+form button {
+    font-size: .8rem;
+}
+
 .cellphone-grid {
     padding-right: 1rem;
     padding-bottom: 9rem;

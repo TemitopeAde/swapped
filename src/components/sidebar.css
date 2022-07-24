@@ -1,30 +1,29 @@
 .sidebar-container {
-    width: 90vh;
-
+    width: 100%;
 }
 
+
 .sidebar-container .sidebar {
-    width: 30%;
+    width: 31%;
     padding: 20px;
     position: fixed;
     bottom: 0;
     top: 15vh;
     left: 0;
     background-color: rgb(253, 251, 251);
-    z-index: 10000;
 }
 
 .sidebar-container .sidebar-content {
     position: absolute;
     left: 30%;
-    top: 15vh;
-    z-index: 300000;
+    top: 8vh;
     background-color: white;
-    overflow-y: scroll;
-    padding: 2rem;
-    width: 68%;
+    padding: 0 2rem;
+    width: auto;
     height: 80vh;
     padding-right: 5rem;
+    overflow-y: scroll;
+
 }
 
 .sidebar a {
@@ -33,8 +32,6 @@
 }
 
 .sidebar-container .sidebar .first-list {
-    /* height: 50vh; */
-    overflow-y: scroll;
     padding: 1rem 0;
     overflow-x: hidden;
     padding-bottom: 5rem;
@@ -45,6 +42,13 @@
     padding: 10px 0;
     display: block;
     font-size: 1.3rem;
+    transition: .8s;
+    opacity: .85;
+}
+
+.first-list a:hover {
+    color: black;
+    opacity: 1;
 }
 
 .sidebar-container .others {
@@ -84,6 +88,7 @@
 
 .first-list a {
     transition: .8s;
+    font-size: .86rem;
 }
 
 
@@ -94,7 +99,7 @@
     left: 0;
     right: 0;
     z-index: 20000;
-    top: 16vh;
+    top: 12vh;
 }
 
 
@@ -106,7 +111,7 @@
 
 .mobile-sidebar-container .mobile-first-list {
     /* height: 50vh; */
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     padding: 1rem 0;
     overflow-x: hidden;
 }

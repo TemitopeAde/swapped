@@ -1,0 +1,80 @@
+.mobile-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+.mobile-grid-phones {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 1rem;
+    column-gap: 1rem;
+    row-gap: 0.4rem;
+    padding: 0 1rem;
+}
+
+.mobile-grid-phones a {
+    color: black;
+    text-decoration: none;
+    font-size: .8rem;
+    transition: .8s;
+}
+
+
+.mobile-grid-phones a:hover {
+    color: black;
+}
+
+.mobile-items h6 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.mobile-items {
+    font-family: 'Poppins';
+    margin-top: 0rem;
+}
+
+.vermas {
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

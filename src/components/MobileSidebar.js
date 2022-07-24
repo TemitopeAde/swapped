@@ -9,7 +9,6 @@ import quality from "../images/quality.png";
 import "./sidebar.css";
 
 const MobilESidebar = ({ sidebar }) => {
-  console.log(sidebar);
   return (
     <Box
       className={
@@ -22,34 +21,34 @@ const MobilESidebar = ({ sidebar }) => {
             <Link to="/">Top OFertas</Link>
           </li>
           <li>
-            <Link to="/">Smartphones</Link>
+            <Link to="/smart-phones">Smartphones</Link>
           </li>
           <li>
-            <Link to="/">MacBook</Link>
+            <Link to="/macbook">MacBook</Link>
           </li>
           <li>
-            <Link to="/">iPad & Tablets</Link>
+            <Link to="/ipad-and-tablets">iPad & Tablets</Link>
           </li>
           <li>
-            <Link to="/">Informatica y Accesories</Link>
+            <Link to="/formatica-y-accesories">Informatica y Accesories</Link>
           </li>
           <li>
-            <Link to="/">Coleccion Apple</Link>
+            <Link to="/collections">Coleccion Apple</Link>
           </li>
           <li>
-            <Link to="/">Cascos, Altavoces y Audio</Link>
+            <Link to="/audio">Cascos, Altavoces y Audio</Link>
           </li>
           <li>
-            <Link to="/">Apple watch</Link>
+            <Link to="/apple-watch">Apple watch</Link>
           </li>
           <li>
-            <Link to="/">Accessorios</Link>
+            <Link to="/accessories">Accessorios</Link>
           </li>
           <li>
-            <Link to="/">Televisores y Sonido</Link>
+            <Link to="/televisores">Televisores y Sonido</Link>
           </li>
           <li>
-            <Link to="/">Tienda oficial</Link>
+            <Link to="/tienda">Tienda oficial</Link>
           </li>
         </ul>
 

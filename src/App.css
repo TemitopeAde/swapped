@@ -98,3 +98,14 @@ a {
     display: flex;
     flex-direction: column;
 }
+
+
+
+.MuiTypography-caption,
+.slider-ticks {
+    display: none;
+}
+
+.MuiButton-label {
+    display: none !important;
+}

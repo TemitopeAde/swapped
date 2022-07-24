@@ -34,9 +34,7 @@ const SidebarContent = ({ show }) => {
         <Box className="mt-4 iphone-grid-sidebar">
           <Box>
             <h6>iPhone</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">Todos ios iPhone</Link>
@@ -82,9 +80,7 @@ const SidebarContent = ({ show }) => {
               sip that mochaccino. Or actually work
             </p>
           </div>
-          <div className="advert-sidebar-wrap">
-            <img src={mac} alt="" />
-          </div>
+         
           <div className="advert-sidebar-wrap">
             <button style={{ fontFamily: "Poppins" }} className="btn btn-light">
               Ver ofertas
@@ -95,9 +91,7 @@ const SidebarContent = ({ show }) => {
         <Box className="mt-4 iphone-grid-sidebar">
           <Box>
             <h6>All MacBook</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link  style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">Todos ios MackBook</Link>
@@ -127,9 +121,7 @@ const SidebarContent = ({ show }) => {
               e-waste and more spending
             </p>
           </div>
-          <div className="advert-sidebar-wrap">
-            <img src={ipad} alt="" />
-          </div>
+          
           <div className="advert-sidebar-wrap">
             <button style={{ fontFamily: "Poppins" }} className="btn btn-light">
               Ver ofertas
@@ -140,9 +132,7 @@ const SidebarContent = ({ show }) => {
         <Box className="mt-4 iphone-grid-sidebar">
           <Box>
             <h6>All iPad</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link  style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">iPad 7 (2019)</Link>
@@ -168,9 +158,7 @@ const SidebarContent = ({ show }) => {
             <h1>Accessories</h1>
             <p style={{ opacity: ".8" }}>Phone accessories? We got them all</p>
           </div>
-          <div className="advert-sidebar-wrap">
-            <img src={watch} alt="" />
-          </div>
+          
           <div className="advert-sidebar-wrap">
             <button style={{ fontFamily: "Poppins" }} className="btn btn-light">
               Ver ofertas
@@ -187,9 +175,7 @@ const SidebarContent = ({ show }) => {
         >
           <Box>
             <h6>Smartphone accessories</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link  style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">All smartphone accessories</Link>
@@ -204,9 +190,7 @@ const SidebarContent = ({ show }) => {
         <Box className="mt-4 iphone-grid-sidebar">
           <Box>
             <h6>Laptop accessories</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link  style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">All laptop accessories</Link>
@@ -235,9 +219,7 @@ const SidebarContent = ({ show }) => {
               e-waste and more spending
             </p>
           </div>
-          <div className="advert-sidebar-wrap">
-            <img src={ipad} alt="" />
-          </div>
+          
           <div className="advert-sidebar-wrap">
             <button style={{ fontFamily: "Poppins" }} className="btn btn-light">
               Ver ofertas
@@ -248,9 +230,7 @@ const SidebarContent = ({ show }) => {
         <Box className="mt-4 iphone-grid-sidebar">
           <Box>
             <h6>All iPad</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">iPad 7 (2019)</Link>
@@ -279,9 +259,7 @@ const SidebarContent = ({ show }) => {
               e-waste and more spending
             </p>
           </div>
-          <div className="advert-sidebar-wrap">
-            <img src={ipad} alt="" />
-          </div>
+          
           <div className="advert-sidebar-wrap">
             <button style={{ fontFamily: "Poppins" }} className="btn btn-light">
               Ver ofertas
@@ -292,9 +270,7 @@ const SidebarContent = ({ show }) => {
         <Box className="mt-4 iphone-grid-sidebar">
           <Box>
             <h6>All iPad</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">iPad 7 (2019)</Link>
@@ -324,9 +300,7 @@ const SidebarContent = ({ show }) => {
               sip that mochaccino. Or actually work
             </p>
           </div>
-          <div className="advert-sidebar-wrap">
-            <img src={mac} alt="" />
-          </div>
+          
           <div className="advert-sidebar-wrap">
             <button style={{ fontFamily: "Poppins" }} className="btn btn-light">
               Ver ofertas
@@ -337,9 +311,7 @@ const SidebarContent = ({ show }) => {
         <Box className="mt-4 iphone-grid-sidebar">
           <Box>
             <h6>All MacBook</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">Todos ios MackBook</Link>
@@ -370,9 +342,7 @@ const SidebarContent = ({ show }) => {
               Quitan de las manos!
             </p>
           </div>
-          <div className="advert-sidebar-wrap">
-            <img src={Phone} alt="" />
-          </div>
+         
           <div className="advert-sidebar-wrap">
             <button style={{ fontFamily: "Poppins" }} className="btn btn-light">
               Ver ofertas
@@ -383,9 +353,7 @@ const SidebarContent = ({ show }) => {
         <Box className="mt-4 iphone-grid-sidebar">
           <Box>
             <h6>iPhone</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">Todos ios iPhone</Link>
@@ -430,9 +398,7 @@ const SidebarContent = ({ show }) => {
               e-waste and more spending
             </p>
           </div>
-          <div className="advert-sidebar-wrap">
-            <img src={ipad} alt="" />
-          </div>
+          
           <div className="advert-sidebar-wrap">
             <button style={{ fontFamily: "Poppins" }} className="btn btn-light">
               Ver ofertas
@@ -443,9 +409,7 @@ const SidebarContent = ({ show }) => {
         <Box className="mt-4 iphone-grid-sidebar">
           <Box>
             <h6>All iPad</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">iPad 7 (2019)</Link>
@@ -471,9 +435,7 @@ const SidebarContent = ({ show }) => {
             <h1>Accessories</h1>
             <p style={{ opacity: ".8" }}>Phone accessories? We got them all</p>
           </div>
-          <div className="advert-sidebar-wrap">
-            <img src={watch} alt="" />
-          </div>
+          
           <div className="advert-sidebar-wrap">
             <button style={{ fontFamily: "Poppins" }} className="btn btn-light">
               Ver ofertas
@@ -490,9 +452,7 @@ const SidebarContent = ({ show }) => {
         >
           <Box>
             <h6>Smartphone accessories</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">All smartphone accessories</Link>
@@ -507,9 +467,7 @@ const SidebarContent = ({ show }) => {
         <Box className="mt-4 iphone-grid-sidebar">
           <Box>
             <h6>Laptop accessories</h6>
-            <Link style={{ fontSize: "0.8rem", color: "gray" }} to="/">
-              Ver mas
-            </Link>
+            <Link style={{fontSize: '0.8rem', color: 'gray'}} to="/">Ver mas</Link>
           </Box>
           <Box className="advert-phone-grid">
             <Link to="/">All laptop accessories</Link>

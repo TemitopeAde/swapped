@@ -9,6 +9,7 @@ import filter from "../images/collections.png";
 import Filter from "../components/Filter";
 import Sort from "../components/Sort";
 import Footer from "../components/Footer";
+import RangeSlider from "../hist/RangeSlider";
 
 const Request = () => {
   const [showMore, setShowMore] = useState(false);
@@ -17,6 +18,7 @@ const Request = () => {
   const [showColor, setShowColor] = useState(false);
   const [showMobileFilter, setShowMobileFilter] = useState(false);
   const [showSort, setShowSort] = useState(false);
+  const prices = [1600, 1400, 1200, 1000, 800, 600, 400, 300, 100, 20];
 
   return (
     <Box className="cellphone-container">
@@ -25,18 +27,12 @@ const Request = () => {
       <Box className="cellphone-wrap">
         <Box className="filter-bar p-3">
           <form>
-            <Box className="mb-5 mt-5">
-              <input
-                className="form-control"
-                type="number"
-                step="any"
-                min="0"
-                max="1"
-                // value={numb}
-                // onChange={(e) => setNumb(e.target.value)}
-              />
+            <Box className="mb-5">
+              <div style={{ width: "100%" }}>
+                <RangeSlider data={prices} />
+              </div>
 
-              <h6 className="mb-3">Manufacturer</h6>
+              <h6 className="mb-3" style={{marginTop: '5rem'}}>Manufacturer</h6>
 
               <div class="form-check">
                 <input
@@ -664,9 +660,7 @@ const Request = () => {
                   <h6 style={{ fontWeight: "bold" }}>€85.00 - €295.00</h6>
                 </Box>
 
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
+                
                 <Box className="repuestos-grid">
                   <Box>
                     <Stack
@@ -709,9 +703,7 @@ const Request = () => {
                   <h6 style={{ fontWeight: "bold" }}>€85.00 - €330.00</h6>
                 </Box>
 
-                <Box>
-                  <h3 className="bolder">399€</h3>
-                </Box>
+               
                 <Box className="repuestos-grid">
                   <Box>
                     <Stack

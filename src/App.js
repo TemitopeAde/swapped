@@ -17,6 +17,17 @@ import Website from "./pages/WebsiteTerms";
 import Preguntas from "./pages/Preguntas";
 import Cookie from "./pages/Cookie";
 import ContactUs from "./pages/Contact";
+import BarApp from "./hist";
+import SmartPhone from "./Mobile/SmartPhone";
+import Macbook from "./Mobile/Macbook";
+import Ipad from "./Mobile/Ipad";
+import Informatica from "./Mobile/Informatica";
+import Accesories from "./Mobile/Accessories";
+import AppleWatch from "./Mobile/AppleWatch";
+import Audio from "./Mobile/Audio";
+import Collections from "./Mobile/Collection";
+import Televisores from "./Mobile/Televisores";
+import Tienda from "./Mobile/Tienda";
 
 function App() {
   return (
@@ -38,6 +49,17 @@ function App() {
         <Route path="/preguntas" element={<Preguntas />} />
         <Route path="/cookie-policy" element={<Cookie />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/hist" element={<BarApp />} />
+        <Route path="/smart-phones" element={<SmartPhone />} />
+        <Route path="/macbook" element={<Macbook />} />
+        <Route path="/ipad-and-tablets" element={<Ipad />} />
+        <Route path="/formatica-y-accesories" element={<Informatica />} />
+        <Route path="/accessories" element={<Accesories />} />
+        <Route path="/apple-watch" element={<AppleWatch />} />
+        <Route path="/audio" element={<Audio />} />
+        <Route path="/collections" element={<Collections />} />
+        <Route path="/televisores" element={<Televisores />} />
+        <Route path="/tienda" element={<Tienda />} />
       </Routes>
     </div>
   );

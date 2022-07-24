@@ -2,12 +2,17 @@ import { Box } from "@mui/material";
 import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import "./contactform.css";
+// import RangeSlider from "../hist/RangeSlider";
+import './contact.css';
+
 
 const ContactUs = () => {
+  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <Box>
       <Header />
@@ -47,6 +52,7 @@ const ContactUs = () => {
           </Box>
         </Box>
       </Box>
+      
       <Footer />
     </Box>
   );

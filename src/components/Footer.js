@@ -24,7 +24,7 @@ const Footer = () => {
         passive: true,
       });
 
-      console.log("big")
+      // console.log("big")
 
       return () => {
         window.removeEventListener("scroll", handleScroll);

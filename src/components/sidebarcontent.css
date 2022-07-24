@@ -28,6 +28,7 @@
     display: grid;
     grid-template-columns: 20% 80%;
     column-gap: 2rem;
+    padding-bottom: 4rem;
 }
 
 .iphone-grid-sidebar .advert-phone-grid {
@@ -42,6 +43,8 @@
     text-decoration: none;
     transition: .8s;
     opacity: .7;
+    font-size: .8rem;
+    font-family: 'Poppins';
 }
 
 .iphone-grid-sidebar .advert-phone-grid a:hover{
