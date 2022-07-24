@@ -52,14 +52,14 @@ const MobilESidebar = ({ sidebar }) => {
           </li>
         </ul>
 
-        {/* <Box className="mobile-others">
+        <Box className="mobile-others">
           <ul className="mobile-second-list">
             <li>
               <Link to="/">
                 <span style={{ marginRight: "10px" }}>
                   <img style={{ width: "25px" }} src={trade} alt="" />
                 </span>
-                Trade-in
+                Top OFERTAS
               </Link>
             </li>
           </ul>
@@ -69,7 +69,7 @@ const MobilESidebar = ({ sidebar }) => {
                 <span style={{ marginRight: "10px" }}>
                   <img style={{ width: "25px" }} src={quality} alt="" />
                 </span>
-                Our quality standard
+                Smartphones Nuevos
               </Link>
             </li>
           </ul>
@@ -79,11 +79,71 @@ const MobilESidebar = ({ sidebar }) => {
                 <span style={{ marginRight: "10px" }}>
                   <img style={{ width: "25px" }} src={verified} alt="" />
                 </span>
-                Verified customers ratings
+                Nuestros Recondicionados
               </Link>
             </li>
           </ul>
-        </Box> */}
+          <ul className="mobile-fort-list">
+            <li>
+              <Link to="/">
+                <span style={{ marginRight: "10px" }}>
+                  <img style={{ width: "25px" }} src={verified} alt="" />
+                </span>
+                Repuesto
+              </Link>
+            </li>
+          </ul>
+          <ul className="mobile-fort-list">
+            <li>
+              <Link to="/">
+                <span style={{ marginRight: "10px" }}>
+                  <img style={{ width: "25px" }} src={verified} alt="" />
+                </span>
+                Fundas y Protectores
+              </Link>
+            </li>
+          </ul>
+          <ul className="mobile-fort-list">
+            <li>
+              <Link to="/">
+                <span style={{ marginRight: "10px" }}>
+                  <img style={{ width: "25px" }} src={verified} alt="" />
+                </span>
+                Accesorios
+              </Link>
+            </li>
+          </ul>
+          <ul className="mobile-fort-list">
+            <li>
+              <Link to="/">
+                <span style={{ marginRight: "10px" }}>
+                  <img style={{ width: "25px" }} src={verified} alt="" />
+                </span>
+                Informatica y Ocio
+              </Link>
+            </li>
+          </ul>
+          <ul className="mobile-fort-list">
+            <li>
+              <Link to="/">
+                <span style={{ marginRight: "10px" }}>
+                  <img style={{ width: "25px" }} src={verified} alt="" />
+                </span>
+                Material para Tiendas
+              </Link>
+            </li>
+          </ul>
+          <ul className="mobile-fort-list">
+            <li>
+              <Link to="/">
+                <span style={{ marginRight: "10px" }}>
+                  <img style={{ width: "25px" }} src={verified} alt="" />
+                </span>
+                Blogs
+              </Link>
+            </li>
+          </ul>
+        </Box>
       </Box>
     </Box>
   );
